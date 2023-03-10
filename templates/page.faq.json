@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "1655720553923656f4": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "FAQs",
+        "image_position": "right",
+        "content": "",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "4bb9ec4d-abb0-4eba-9cc2-26ce94a92f3b": {
+          "type": "question",
+          "settings": {
+            "title": "What is Non-GMO Feed?",
+            "answer": "<p><em><strong>GMO<\/strong><\/em><em> stands for <\/em><em><strong>Genetically Modified Organism<\/strong><\/em><em>. In simple terms, Non-GMO feed refers to naturally made feed without any form of genetic modification. FlyGrubs is non-GMO, made with all natural, non-toxic ingredients for the healthy growth of your flock!<\/em><\/p>"
+          }
+        },
+        "7c40a317-cb45-4678-9549-9acb07f4e8d7": {
+          "type": "question",
+          "settings": {
+            "title": "Why should I choose FlyGrubs?",
+            "answer": "<p><em>The real question is ‘why not’? Not only is FlyGrubs <\/em><em><strong>non-GMO<\/strong><\/em><em> and <\/em><em><strong>FDA approved<\/strong><\/em><em>, it’s the healthy, <\/em><em><strong>quality<\/strong><\/em><em> feed that’s <\/em><em><strong>highly fortified with protein<\/strong><\/em><em> and <\/em><em><strong>85x more calcium<\/strong><\/em><em> that your flock needs for <\/em><em><strong>stronger eggshells and bones<\/strong><\/em><em>, fuller feathers and overall growth!<\/em><\/p>"
+          }
+        },
+        "5c4bf9fd-5298-41d4-bccd-cc09fda93b9c": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I buy FlyGrubs?",
+            "answer": "<p><em>You’re already right there - you can get our nutritious FlyGrubs Feed by clicking the link below to get the healthy feast your flock needs right now! FlyGrubs can also be purchased on our mother website <\/em><span style=\"text-decoration:underline\"><em><strong>Razor Shopping<\/strong><\/em><\/span><em>, on Amazon, and other partner websites. The best time to get it is now - let’s get yours!<\/em><\/p>"
+          }
+        },
+        "125f9a4d-7cfd-49fb-b045-c2c724e4d333": {
+          "type": "question",
+          "settings": {
+            "title": "Can I feed my chicks with FlyGrubs?",
+            "answer": "<p><em>That’s the best part - our FlyGrubs Feed is perfect for every member of your coop - from chicks to roosters, layers, pullets, hens - you name it! If they’ve got wings, FlyGrubs is most probably their favorite meal!<\/em><\/p>"
+          }
+        },
+        "f358623e-348a-4be6-b953-b0d4c2686a87": {
+          "type": "question",
+          "settings": {
+            "title": "What is BSFL?",
+            "answer": "<p><em>You may not know this, but Chickens really love this! <\/em><em><strong>BSFL<\/strong><\/em><em> (<\/em><em><strong>Black Spider Fly Larvae<\/strong><\/em><em>) is a harmless fly species that contains all the essential nutrients, vitamins and amino acids needed for healthy chicken growth! It’s the perfect, immune-boosting high quality feed your flock needs, and sustainably made to give you the best value for your money. Find out more about our FlyGrubs BSFL Feed here.<\/em><\/p>"
+          }
+        },
+        "0da8f997-614f-4631-bd08-57d0648aa43b": {
+          "type": "question",
+          "settings": {
+            "title": "Do Chickens need supplements?",
+            "answer": "<p>Just like us humans, your chickens need a little extra for healthy growth! Our FlyGrubs Feed contains all the essential ingredients your flock needs, but you can get creative with their meals too. For example, you could add certain fruits to their diet to give them extra nutrition! Find out more about Chicken supplements here.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4bb9ec4d-abb0-4eba-9cc2-26ce94a92f3b",
+        "7c40a317-cb45-4678-9549-9acb07f4e8d7",
+        "5c4bf9fd-5298-41d4-bccd-cc09fda93b9c",
+        "125f9a4d-7cfd-49fb-b045-c2c724e4d333",
+        "f358623e-348a-4be6-b953-b0d4c2686a87",
+        "0da8f997-614f-4631-bd08-57d0648aa43b"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1655720553923656f4",
+    "main"
+  ]
+}

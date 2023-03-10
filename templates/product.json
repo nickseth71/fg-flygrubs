@@ -1,0 +1,400 @@
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "64e0f95b-e08c-4048-988d-8b5c67e49246": {
+          "type": "reviews",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": true,
+            "size_chart": ""
+          }
+        },
+        "cb28d190-283a-432f-92c3-839113b597a2": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+          "settings": {
+            "primary_color": "#007861",
+            "secondary_color": "#003d5e",
+            "header_text": "Purchase Options",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": true,
+            "show_payment_button": false
+          }
+        },
+        "e72b5a65-7538-4528-8342-a88db925e40e": {
+          "type": "similar-product",
+          "settings": {
+            "similar_items_title": "Add this product to your purchase and <span>get 35% off<\/span>"
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "64e0f95b-e08c-4048-988d-8b5c67e49246",
+        "description",
+        "variant_selector",
+        "cb28d190-283a-432f-92c3-839113b597a2",
+        "quantity_selector",
+        "buy_buttons",
+        "e72b5a65-7538-4528-8342-a88db925e40e"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": false,
+        "enable_video_looping": true
+      }
+    },
+    "165402254707c6f625": {
+      "type": "home-graph",
+      "disabled": true,
+      "blocks": {
+        "85339ec4-7d58-443b-9443-ed32ad0bd927": {
+          "type": "graph",
+          "settings": {
+            "title": "Crude Protein",
+            "val1": "85",
+            "val2": "75"
+          }
+        },
+        "dd5159f9-d306-4fd2-ba80-f3b035d95943": {
+          "type": "graph",
+          "settings": {
+            "title": "Calcium",
+            "val1": "15",
+            "val2": "5"
+          }
+        },
+        "9b8e4ea5-f291-4b2d-aed7-58195f4d7506": {
+          "type": "graph",
+          "settings": {
+            "title": "Fiber",
+            "val1": "15",
+            "val2": "15"
+          }
+        },
+        "f681abca-8439-4c09-8e7c-ce4fe58a7253": {
+          "type": "graph",
+          "settings": {
+            "title": "Moisture",
+            "val1": "20",
+            "val2": "15"
+          }
+        },
+        "56eea5fe-a21a-4ed6-86fb-1c13e72133dc": {
+          "type": "graph",
+          "settings": {
+            "title": "Crude Fat",
+            "val1": "55",
+            "val2": "45"
+          }
+        },
+        "c4375fa6-fd68-4c9b-a4d9-fc105b3807e1": {
+          "type": "graph",
+          "settings": {
+            "title": "Lysine",
+            "val1": "8",
+            "val2": "8"
+          }
+        },
+        "40f28c66-ee96-4897-a72b-3daa208a0c3c": {
+          "type": "graph",
+          "settings": {
+            "title": "Phosphorus",
+            "val1": "5",
+            "val2": "5"
+          }
+        }
+      },
+      "block_order": [
+        "85339ec4-7d58-443b-9443-ed32ad0bd927",
+        "dd5159f9-d306-4fd2-ba80-f3b035d95943",
+        "9b8e4ea5-f291-4b2d-aed7-58195f4d7506",
+        "f681abca-8439-4c09-8e7c-ce4fe58a7253",
+        "56eea5fe-a21a-4ed6-86fb-1c13e72133dc",
+        "c4375fa6-fd68-4c9b-a4d9-fc105b3807e1",
+        "40f28c66-ee96-4897-a72b-3daa208a0c3c"
+      ],
+      "settings": {
+        "location": "both",
+        "title": "flygrubs vs mealworms",
+        "subheading": "FLYGRUBS® are a high-protein, healthier & more affordable alternative to mealworms."
+      }
+    },
+    "1654058573a84987c6": {
+      "type": "product-faqs",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Frequently asked questions"
+      }
+    },
+    "6ca32d77-c155-4e19-89f2-7f13d1df8c73": {
+      "type": "home-infographic",
+      "settings": {
+        "location": "both",
+        "title": "The sustainable + clean making of FLYGRUBS®",
+        "subheading": "",
+        "link_text": "Get it now",
+        "link_url": "#Add__To__Cart",
+        "image": "shopify:\/\/shop_images\/infographic-image-landing-page-subscription-sep-22.jpg"
+      }
+    },
+    "19da0f79-f867-4566-a34d-bfc368dae4af": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14423945609296__19da0f79-f867-4566-a34d-bfc368dae4af-1667452682d4722d51-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_307_copy_1000x_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/sdsds_x800_1.jpg",
+            "apply_overlay": false,
+            "content_position": "middleLeft",
+            "subheading": "",
+            "title": "Choose happiness   And health for your girls.",
+            "content": "<p>Subscribe & Save<\/p>",
+            "contentMob": "<p>Write your own custom content.<\/p>",
+            "button_1_text": "SUBSCRIBE NOW",
+            "button_1_link": "#Add__To__Cart",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "template--14423945609296__19da0f79-f867-4566-a34d-bfc368dae4af-1667452682d4722d51-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "content": "<p>Write your own custom content.<\/p>",
+            "contentMob": "<p>Write your own custom content.<\/p>",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14423945609296__19da0f79-f867-4566-a34d-bfc368dae4af-1667452682d4722d51-0",
+        "template--14423945609296__19da0f79-f867-4566-a34d-bfc368dae4af-1667452682d4722d51-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#01ff61"
+      }
+    },
+    "89f3f460-4675-43c3-97ee-0817d60d47a0": {
+      "type": "top-image-text",
+      "disabled": true,
+      "blocks": {
+        "f78eb8a8-2a10-4406-8047-006964754f4e": {
+          "type": "text",
+          "settings": {
+            "title": "Quality and Consistency",
+            "svg": "",
+            "content": "<p>Black Soldier Fly Larvae are nutrient dense and contain, on average, 85x more calcium, about 40% crude protein and about 27% crude fat. Other than growing your own larvae (which we encourage people to do), our grubs are your best option for your girls, bar none.<\/p>"
+          }
+        },
+        "4f905745-84b8-46e2-be57-4aca13d4493d": {
+          "type": "text",
+          "settings": {
+            "title": "FDA APPROVED",
+            "svg": "",
+            "content": "<p>All natural dried insects chicken feed, preservative and additive free, adult chicken feed diet supplement and treat. Perfect for grain free chicken feed.<\/p>"
+          }
+        },
+        "e47be51d-ff0b-43cb-81ab-6d0f4a5eb4c1": {
+          "type": "text",
+          "settings": {
+            "title": "ENCOURAGES NATURAL CHICKEN FEEDING BEHAVIOUR",
+            "svg": "",
+            "content": "<p>Feed this backyard chicken feed, by the handful or scatter on the groundto encourage foraging for food.<\/p>"
+          }
+        },
+        "8b401779-2b15-433e-8f37-9b9aef0ec1c6": {
+          "type": "text",
+          "settings": {
+            "title": "HIGH PROTEIN HEN SNACKS and non-GMO",
+            "svg": "",
+            "content": "<p>More essential nutrients than other treats for chickens. 35-40% Protein, 25-30% healthy fat, 2-5% Calcium, Phosphorus, Fiber, Lysine & Dietary Fat.<\/p>"
+          }
+        },
+        "3c6f8cce-c913-4764-b527-b00f7a2fc474": {
+          "type": "text",
+          "settings": {
+            "title": "HEALTHY FEATHERS, HAPPY CHICKENS",
+            "svg": "",
+            "content": "<p>FLYGRUBS contains natural supplements for chickens to speed up molting.<\/p>"
+          }
+        },
+        "a02fe896-3090-47d2-b289-6f8f36dcd2fb": {
+          "type": "text",
+          "settings": {
+            "title": "The Best of Both Worlds",
+            "svg": "",
+            "content": "<p>Get BSFL and Mealworms in one box and let your girls dig into the benefits of both!<\/p>"
+          }
+        },
+        "dd175c4f-99cb-4db9-8de1-dd5e9d79caa1": {
+          "type": "text",
+          "settings": {
+            "title": "For Your Slithery Friends",
+            "svg": "",
+            "content": "<p>High protein snacks for all your reptiles!<\/p>"
+          }
+        },
+        "e2362abc-e1f8-4ae0-b459-69e22f9c034a": {
+          "type": "text",
+          "settings": {
+            "title": "It’s Bugalicious!",
+            "svg": "",
+            "content": "<p>Give your girls the super mix of flavours made from different bugs.<\/p>"
+          }
+        },
+        "1e971ddf-fb51-4c28-b47e-22ced5913111": {
+          "type": "text",
+          "settings": {
+            "title": "Hassle Free Storage",
+            "svg": "",
+            "content": "<p>No need to worry about storing your mealworms, just pour and seal them away without cold storage until you need them again.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f78eb8a8-2a10-4406-8047-006964754f4e",
+        "4f905745-84b8-46e2-be57-4aca13d4493d",
+        "e47be51d-ff0b-43cb-81ab-6d0f4a5eb4c1",
+        "8b401779-2b15-433e-8f37-9b9aef0ec1c6",
+        "3c6f8cce-c913-4764-b527-b00f7a2fc474",
+        "a02fe896-3090-47d2-b289-6f8f36dcd2fb",
+        "dd175c4f-99cb-4db9-8de1-dd5e9d79caa1",
+        "e2362abc-e1f8-4ae0-b459-69e22f9c034a",
+        "1e971ddf-fb51-4c28-b47e-22ced5913111"
+      ],
+      "settings": {
+      }
+    },
+    "165362893854bf0123": {
+      "type": "background-video",
+      "settings": {
+        "section_size": "preserveRatio",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=o5bzSPnWbRU&t=4s"
+      }
+    },
+    "judgeme_section_review_widget_b1e8": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "judgeme_review_widget_d9aeaecb": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_d9aeaecb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "165362920523719de5": {
+      "type": "apps",
+      "blocks": {
+        "93ea2ca0-7256-4178-a28c-9dcf0a7b7105": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": true,
+            "sku_tagtype": "sku"
+          }
+        },
+        "c302d619-4f16-43a7-a9ba-4c6c046a9221": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "93ea2ca0-7256-4178-a28c-9dcf0a7b7105",
+        "c302d619-4f16-43a7-a9ba-4c6c046a9221"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "165402254707c6f625",
+    "1654058573a84987c6",
+    "6ca32d77-c155-4e19-89f2-7f13d1df8c73",
+    "19da0f79-f867-4566-a34d-bfc368dae4af",
+    "89f3f460-4675-43c3-97ee-0817d60d47a0",
+    "165362893854bf0123",
+    "judgeme_section_review_widget_b1e8",
+    "165362920523719de5",
+    "zp-product-footer-content"
+  ]
+}

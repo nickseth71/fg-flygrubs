@@ -1,0 +1,107 @@
+{% if localization.country.iso_code == section.settings.location or section.settings.location == 'both'%}
+<section class="Section Section--spacingNormal home--graph-section" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        <div class="Mobile__Legends"><span class="val1-label"></span><span class="val2-label"></span></div>
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1"><span class="val1-label"></span>{{ section.settings.title | escape }}<span class="val2-label"></span></h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+            <p>{{ section.settings.subheading | escape }}</p>
+          {%- endif -%}
+      </header>
+    {%- endif -%}
+  </div>
+  <div class="Container">
+    <ul class="Graph__Container">
+      {%- for block in section.blocks -%}
+        <li class="Graph__Desktop">
+          <div class="graph">
+            <div class="col" style="height: {{ block.settings.val1 }}%"><span class="pole"><span class="values-label">{{ block.settings.val1 }}%</span></span></div>
+            <div class="col" style="height: {{ block.settings.val2 }}%"><span class="pole"><span class="values-label">{{ block.settings.val2 }}%</span></span></div>
+          </div>
+          <div class="name">{{ block.settings.title }}</div>
+        </li>
+        <li class="Graph__Mobile">
+          <div class="graph">
+            <div class="col"><div class="pole" style="width: {{ block.settings.val1 }}%"><span class="bar"><span class="values-label">{{ block.settings.val1 }}%</span></span></div></div>
+            <div class="col"><div class="pole" style="width: {{ block.settings.val2 }}%"><span class="bar"><span class="values-label">{{ block.settings.val2 }}%</span></span></div></div>
+          </div>
+          <div class="name">{{ block.settings.title }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+{% schema %}
+{
+  "name": "Home Graph",
+  "class": "shopify-section--bordered",
+  "settings": [
+	{
+      "type": "select",
+      "id": "location",
+      "label": "Location",
+      "options": [
+        {
+          "value": "US",
+          "label": "US"
+        },
+        {
+          "value": "DE",
+          "label": "DE"
+        },
+      {
+          "value": "both",
+          "label": "Both"
+        }
+      ],
+      "default": "both"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your HTML"
+    },
+    {
+        "type": "text",
+        "id": "subheading",
+        "label": "Sub-heading",
+        "default": "Sub-heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "graph",
+      "name": "comparisons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "val1",
+          "label": "Flygrub"
+        },
+        {
+            "type": "text",
+            "id": "val2",
+            "label": "Mealworm"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Home Graph",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

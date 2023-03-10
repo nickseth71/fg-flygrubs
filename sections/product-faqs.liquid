@@ -1,0 +1,47 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.title != blank -%}
+            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+  </div>
+  <div class="Container Accr__Wrap">
+    {% for accordion in product.metafields.accentuate.faqs_head %} 
+        <div class="Head {% if forloop.last == true %}last-child{% endif %}">{{- accordion -}}</div>
+        <div class="Content">{{- product.metafields.accentuate.faqs_content[forloop.index0] -}}</div>
+    {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product FAQS",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your HTML"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Product FAQS",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

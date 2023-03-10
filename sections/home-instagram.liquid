@@ -1,0 +1,71 @@
+{% if localization.country.iso_code == section.settings.location or section.settings.location == 'both'%}
+<section class="Section Section--spacingNormal Instagram__Widget" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <div class="Rte">
+        <div class="elfsight-sapp-4bb8427c-31bf-4b69-a518-154cf5be7a66"></div>
+    </div>
+    <div class="Button__Wrap">
+    {%- if section.settings.link_text != blank -%}
+        <a href="{{ section.settings.link_url }}" class="Button Button--primary" target="_blank">{{ section.settings.link_text | escape }}</a>
+      {%- endif -%}
+    <div>
+  </div>
+</section>
+{% endif %}
+{% schema %}
+{
+  "name": "Home Instagram",
+  "settings": [
+    {
+      "type": "select",
+      "id": "location",
+      "label": "Location",
+      "options": [
+        {
+          "value": "US",
+          "label": "US"
+        },
+        {
+          "value": "DE",
+          "label": "DE"
+        },
+      {
+          "value": "both",
+          "label": "Both"
+        }
+      ],
+      "default": "both"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+        "type": "text",
+        "id": "link_text",
+        "label": "Button text"
+    },
+    {
+        "type": "url",
+        "id": "link_url",
+        "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Home Instagram",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

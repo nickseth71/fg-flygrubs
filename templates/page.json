@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false
+      }
+    },
+    "fe7de35b-689a-4e70-a5ff-236cafb9c70d": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "Terms & Conditions",
+        "image_position": "right",
+        "content": "<p>You'll be informed about the early access through email on the email address that you use while subscribing.<\/p><p>The offer will last only till stocks last so we recommend you to take advantage of the early access.<\/p><p>You'll receive the 15% discount coupon separately. This discount can't be clubbed with any other offers.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fe7de35b-689a-4e70-a5ff-236cafb9c70d"
+  ]
+}

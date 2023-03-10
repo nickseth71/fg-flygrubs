@@ -1,0 +1,571 @@
+{
+  "current": {
+    "heading_color": "#252525",
+    "text_color": "#252525",
+    "text_light_color": "#6a6a6a",
+    "link_color": "#6a6a6a",
+    "background": "#f4f5f2",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#01ff61",
+    "button_text_color": "#252525",
+    "header_background": "#f4f4f2",
+    "header_heading_color": "#252525",
+    "header_light_color": "#6a6a6a",
+    "footer_background": "#f4f5f2",
+    "footer_heading_color": "#1c1b1b",
+    "footer_text_color": "#252525",
+    "navigation_background": "#f4f5f2",
+    "navigation_text_color": "#252525",
+    "newsletter_popup_background": "#1c1b1b",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "product_rating_color": "#ffad33",
+    "heading_font": "montserrat_n5",
+    "heading_size": "normal",
+    "uppercase_heading": true,
+    "text_font": "nunito_sans_n4",
+    "base_text_font_size": 15,
+    "color_swatch_config": "Harbor Blue:#1a4984\nMidnight Black: #000000\nNatural White: #ffffff",
+    "show_page_transition": true,
+    "show_button_transition": false,
+    "show_element_staggering": false,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": false,
+    "product_show_secondary_image": false,
+    "show_product_rating": false,
+    "product_info_alignment": "center",
+    "product_image_size": "square",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "drawer",
+    "cart_enable_notes": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/flygrubs\/",
+    "social_instagram": "https:\/\/www.instagram.com\/flygrubs\/",
+    "favicon": "shopify:\/\/shop_images\/favicon_7c96926b-9a55-40f3-9c4b-65e11880e834.png",
+    "off": "(50% off on first delivery)",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#efefef",
+    "checkout_accent_color": "#1c1b1b",
+    "checkout_button_color": "#1c1b1b",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#00504e",
+          "text_color": "#ffffff",
+          "content": "Get more nutrition for your girls and more savings for you.",
+          "link": "https:\/\/flygrubs.com\/collections\/shop"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "47a685a9-d5d9-4c71-939b-6e708d9a6e7b": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "shop all",
+              "push_1_image": "shopify:\/\/shop_images\/FLYGRUBS-amazon-1_-_5LB_-_natural_1_d5d2e3a0-7559-4b49-bcb2-3a5c398d918e.png",
+              "push_1_heading": "Black Soldier Fly Larvae",
+              "push_1_subheading": "",
+              "push_1_url": "https:\/\/flygrubs.com\/collections\/black-soldier-fly-larvae",
+              "push_2_image": "shopify:\/\/shop_images\/FLYGRUBS-amazon-1_-_5LB_-_natural_1_copy.png",
+              "push_2_heading": "Mealworms & Mixes",
+              "push_2_subheading": "",
+              "push_2_url": "https:\/\/flygrubs.com\/collections\/mealworms-mixes"
+            }
+          },
+          "5087d14a-86e5-4a5f-9b14-1e60da3ba693": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "shop all 2",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "47a685a9-d5d9-4c71-939b-6e708d9a6e7b",
+          "5087d14a-86e5-4a5f-9b14-1e60da3ba693"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo_svg": "<svg viewbox=\"0 0 150 37\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M7.64133 14.7277C7.92149 14.7277 8.16662 14.8328 8.36798 15.0342C8.56935 15.2355 8.66565 15.4807 8.66565 15.7608C8.66565 16.041 8.56059 16.2861 8.35923 16.4875C8.15787 16.6888 7.92149 16.7939 7.63258 16.7939L2.37966 16.7764V19.9369H6.17927C6.45942 19.9369 6.70456 20.0332 6.90592 20.2346C7.10729 20.4359 7.21234 20.6811 7.21234 20.9612C7.21234 21.2414 7.10729 21.4865 6.90592 21.6879C6.70456 21.8892 6.45942 21.9855 6.17927 21.9855H2.37966V26.1791C2.37966 26.4593 2.2746 26.7044 2.07324 26.897C1.87188 27.0984 1.62674 27.2034 1.34658 27.2034C1.06643 27.2034 0.821293 27.0984 0.628686 26.897C0.427324 26.7044 0.322266 26.4593 0.322266 26.1791V15.7521C0.322266 15.4632 0.427324 15.218 0.628686 15.0254C0.821293 14.8241 1.06643 14.719 1.34658 14.719H1.35534L7.64133 14.7365V14.7277Z\"><\/path>\n<path d=\"M15.0042 14.7278C15.2843 14.7278 15.5294 14.8328 15.7308 15.0342C15.9322 15.2356 16.0372 15.4719 16.0372 15.7609V25.1548H20.6423C20.9224 25.1548 21.1676 25.2599 21.3689 25.4612C21.5703 25.6626 21.6666 25.899 21.6666 26.1791C21.6666 26.4593 21.5703 26.7044 21.3689 26.897C21.1676 27.0897 20.9224 27.2035 20.6423 27.2035H15.0129C14.7328 27.2035 14.4876 27.0984 14.295 26.897C14.0936 26.7044 13.9886 26.4593 13.9886 26.1791V15.7609C13.9886 15.4807 14.0936 15.2356 14.295 15.0342C14.4876 14.8328 14.7328 14.7278 15.0129 14.7278H15.0042Z\"><\/path>\n<path d=\"M33.6783 14.9815C33.8972 15.1566 34.0285 15.3842 34.0635 15.6556C34.0898 15.9358 34.0197 16.1897 33.8359 16.4085L30.0713 21.1186V26.1527C30.0713 26.4328 29.9662 26.678 29.7649 26.8793C29.5635 27.0807 29.3271 27.177 29.0382 27.177C28.7493 27.177 28.5129 27.0807 28.3203 26.8793C28.119 26.678 28.0139 26.4328 28.0139 26.1527V21.1186L24.2493 16.4085C24.0655 16.1897 23.9954 15.9358 24.0304 15.6556C24.0567 15.3755 24.188 15.1478 24.4069 14.9815C24.6258 14.7976 24.8797 14.7276 25.1598 14.7539C25.44 14.7889 25.6676 14.9202 25.8515 15.1391L29.0382 19.14L32.2425 15.1391C32.4176 14.9202 32.6452 14.7889 32.9166 14.7539C33.1968 14.7276 33.4507 14.7976 33.6695 14.9815H33.6783Z\"><\/path>\n<path d=\"M44.7532 27.1596C43.0373 27.1596 41.5665 26.5467 40.3495 25.3298C39.1326 24.1129 38.5198 22.6421 38.5198 20.9261C38.5198 19.2102 39.1326 17.7481 40.3495 16.5312C41.5665 15.3143 43.0373 14.7014 44.7532 14.7014C46.1628 14.7014 47.4235 15.1304 48.5353 15.9884C48.763 16.1635 48.8943 16.3911 48.9381 16.68C48.9731 16.9602 48.903 17.2141 48.7279 17.4329C48.5528 17.6606 48.3252 17.7919 48.0538 17.8269C47.7737 17.8707 47.511 17.8006 47.2921 17.6255C46.548 17.0565 45.6988 16.7676 44.762 16.7676C43.6151 16.7676 42.6346 17.1703 41.8116 17.9845C40.9974 18.7987 40.5947 19.7792 40.5947 20.9261C40.5947 22.073 40.9974 23.0536 41.8116 23.8765C42.6258 24.6907 43.6151 25.0934 44.762 25.0934C45.8388 25.0934 46.7669 24.7345 47.5635 24.0078C47.5723 23.9991 47.5986 23.9816 47.6248 23.9553V21.679H44.2367C43.9478 21.679 43.7027 21.5827 43.51 21.3814C43.3087 21.18 43.2036 20.9349 43.2036 20.6547C43.2036 20.3746 43.3087 20.1294 43.51 19.9281C43.7027 19.7267 43.9478 19.6217 44.2367 19.6217H48.6754C48.9556 19.6217 49.2007 19.7267 49.4021 19.9281C49.6034 20.1294 49.7085 20.3746 49.7085 20.6547L49.6822 26.1703C49.6822 26.4504 49.5772 26.6956 49.3758 26.8882C49.1832 27.0895 48.9381 27.1946 48.6579 27.1946H48.6492C48.4215 27.1946 48.2114 27.1246 48.0188 26.9757C47.8437 26.8357 47.7211 26.6606 47.6599 26.4417C46.7493 26.9145 45.7863 27.1508 44.762 27.1508L44.7532 27.1596Z\"><\/path>\n<path d=\"M64.8981 18.3347C64.8981 19.0964 64.6617 19.7968 64.189 20.4096C63.7337 21.0225 63.1296 21.4602 62.3767 21.7229L64.3553 25.7238C64.4779 25.969 64.4954 26.2316 64.3991 26.4943C64.3116 26.7657 64.1452 26.9583 63.8826 27.0896C63.7337 27.1596 63.5849 27.1946 63.4273 27.1946C63.0071 27.1946 62.7007 27.002 62.5168 26.6168L60.2143 21.9505H58.4458V26.1003C58.4458 26.3804 58.3407 26.6168 58.1394 26.8182C57.938 27.0195 57.7016 27.1158 57.4127 27.1158C57.1238 27.1158 56.8962 27.0195 56.6948 26.8182C56.4935 26.6168 56.3972 26.3717 56.3972 26.1003V15.7345C56.3972 15.4544 56.4935 15.2092 56.6948 15.0166C56.8962 14.8153 57.1413 14.7102 57.4127 14.7102H61.011C62.0878 14.7102 62.9983 15.0604 63.7512 15.7695C64.5129 16.4787 64.8894 17.3279 64.8894 18.3347H64.8981ZM61.0898 19.9106C61.58 19.8931 61.9915 19.7355 62.3417 19.4291C62.6831 19.1227 62.8582 18.755 62.8582 18.3347C62.8582 17.9145 62.6744 17.5205 62.3154 17.2141C61.9565 16.9077 61.5275 16.7501 61.0197 16.7501H58.4458V19.9106H61.0898Z\"><\/path>\n<path d=\"M78.547 14.7278C78.8271 14.7278 79.0635 14.8241 79.2561 15.0254C79.4575 15.2268 79.5538 15.4632 79.5538 15.7346V22.7472C79.5538 23.9729 79.116 25.0235 78.2493 25.899C77.3826 26.7745 76.332 27.2035 75.1063 27.2035C73.8806 27.2035 72.83 26.7657 71.9546 25.899C71.0791 25.0323 70.6501 23.9817 70.6501 22.7472V15.7346C70.6501 15.4544 70.7464 15.2181 70.9477 15.0254C71.1404 14.8241 71.3855 14.7278 71.6569 14.7278C71.9283 14.7278 72.1734 14.8241 72.366 15.0254C72.5586 15.2268 72.6637 15.4632 72.6637 15.7346V22.7472C72.6637 23.4214 72.9001 23.9904 73.3728 24.4719C73.8456 24.9447 74.4234 25.1811 75.0976 25.1811C75.7717 25.1811 76.332 24.9447 76.8135 24.4719C77.2863 23.9992 77.5226 23.4214 77.5226 22.7472V15.7346C77.5226 15.4544 77.6189 15.2181 77.8203 15.0254C78.0217 14.8241 78.2581 14.7278 78.5295 14.7278H78.547Z\"><\/path>\n<path d=\"M86.7941 27.1947C86.5139 27.1947 86.2688 27.0897 86.0674 26.8883C85.8661 26.6957 85.761 26.4505 85.761 26.1704V15.7784C85.761 15.4982 85.8573 15.2618 86.0587 15.0517C86.26 14.8504 86.5052 14.754 86.7766 14.7453L90.4273 14.7278C91.5217 14.7278 92.441 15.078 93.1939 15.7696C93.938 16.4612 94.3145 17.3192 94.3145 18.326C94.3145 19.3328 93.9555 20.147 93.2464 20.8562C94.1044 21.5653 94.5334 22.4583 94.5334 23.5439C94.5334 24.5507 94.1482 25.4087 93.3865 26.1179C92.6248 26.8358 91.7143 27.186 90.6375 27.186H86.7853L86.7941 27.1947ZM87.8184 19.9632H90.4448C90.9351 19.9632 91.3641 19.8056 91.7318 19.4817C92.0908 19.1577 92.2746 18.7725 92.2746 18.3348C92.2746 17.897 92.0995 17.5381 91.7406 17.2404C91.3904 16.9428 90.9526 16.7852 90.4448 16.7852L87.8184 16.8027V19.9632ZM87.8184 25.1461H90.6462C91.154 25.1461 91.5917 24.9885 91.9507 24.6733C92.3096 24.3669 92.4935 23.9904 92.4935 23.5527C92.4935 23.1149 92.3184 22.7647 91.9594 22.4671C91.6092 22.1694 91.1715 22.0118 90.6637 22.0118H87.8184V25.1461Z\"><\/path>\n<path d=\"M108.244 23.4824C108.2 24.5243 107.779 25.3998 107 26.1177C106.212 26.8356 105.276 27.1945 104.181 27.1945C103.236 27.1945 102.387 26.9931 101.642 26.5817C100.741 26.0914 100.172 25.391 99.9264 24.463C99.8563 24.1916 99.8914 23.9289 100.031 23.6926C100.18 23.4474 100.382 23.2898 100.662 23.2198C100.933 23.1498 101.196 23.1848 101.432 23.3249C101.677 23.4649 101.835 23.675 101.905 23.9552C102.01 24.3404 102.29 24.6468 102.754 24.8657C103.174 25.0583 103.647 25.1546 104.181 25.1546C104.715 25.1546 105.197 24.9795 105.582 24.6381C105.976 24.3054 106.186 23.8852 106.212 23.3861C106.221 23.0885 106.116 22.8171 105.888 22.5807C105.529 22.1955 104.925 22.0029 104.076 21.9854H104.067C104.067 21.9854 104.041 21.9854 104.05 21.9854H104.032C102.614 21.9591 101.529 21.5564 100.776 20.7597C100.154 20.1031 99.8651 19.3326 99.9089 18.4571C99.9526 17.4153 100.373 16.5311 101.152 15.8132C101.931 15.0953 102.877 14.7363 103.971 14.7363C104.917 14.7363 105.766 14.9377 106.51 15.3404C107.412 15.8307 107.981 16.5311 108.226 17.4591C108.296 17.7305 108.261 17.9931 108.112 18.2295C107.972 18.4747 107.771 18.6322 107.499 18.7023C107.228 18.7723 106.965 18.7373 106.729 18.5972C106.484 18.4484 106.326 18.247 106.256 17.9669C106.151 17.5817 105.862 17.2752 105.398 17.0564C104.987 16.8638 104.514 16.7675 103.98 16.7675C103.446 16.7675 102.964 16.9426 102.57 17.284C102.185 17.6254 101.975 18.0457 101.958 18.5359C101.949 18.8336 102.054 19.1138 102.281 19.3501C102.64 19.7266 103.244 19.9192 104.094 19.928H104.137C105.556 19.9542 106.641 20.3657 107.394 21.1624C108.016 21.819 108.305 22.5894 108.261 23.4649L108.244 23.4824Z\"><\/path>\n<path d=\"M112.936 15.2706H112.481C112.428 15.2706 112.385 15.2531 112.35 15.218C112.315 15.183 112.297 15.1392 112.297 15.0955C112.297 15.0517 112.315 14.9992 112.35 14.9641C112.385 14.9291 112.428 14.9116 112.481 14.9116H113.759C113.812 14.9116 113.847 14.9291 113.882 14.9641C113.917 14.9992 113.934 15.0429 113.934 15.0955C113.934 15.148 113.917 15.1918 113.882 15.218C113.847 15.2531 113.803 15.2706 113.759 15.2706H113.304V16.934C113.304 16.9865 113.286 17.0303 113.251 17.0653C113.216 17.1003 113.172 17.1178 113.129 17.1178C113.085 17.1178 113.032 17.1003 112.997 17.0653C112.962 17.0303 112.945 16.9865 112.945 16.934V15.2706H112.936Z\"><\/path>\n<path d=\"M116.368 14.9116C116.368 14.9116 116.438 14.9466 116.464 14.9729C116.491 14.9991 116.499 15.0429 116.499 15.0779V16.9252C116.499 16.9777 116.482 17.0215 116.447 17.0478C116.412 17.0828 116.368 17.1003 116.315 17.1003C116.263 17.1003 116.219 17.0828 116.184 17.0478C116.149 17.0128 116.132 16.969 116.132 16.9252V15.7345L115.563 16.6801V16.6976H115.554V16.7151H115.536V16.7326H115.51V16.7501H115.484C115.484 16.7501 115.44 16.7764 115.414 16.7764H115.405C115.405 16.7764 115.379 16.7764 115.361 16.7764C115.361 16.7764 115.361 16.7764 115.352 16.7764H115.335C115.335 16.7764 115.335 16.7589 115.326 16.7589H115.309V16.7414H115.3V16.7238H115.291C115.291 16.7238 115.291 16.7151 115.291 16.7063L114.722 15.7521V16.9427C114.722 16.9952 114.705 17.039 114.67 17.0653C114.635 17.1003 114.591 17.1178 114.538 17.1178C114.486 17.1178 114.442 17.1003 114.416 17.0653C114.381 17.0303 114.363 16.9865 114.363 16.9427V15.0954C114.363 15.0954 114.372 15.0166 114.398 14.9904C114.424 14.9641 114.459 14.9379 114.494 14.9291C114.529 14.9203 114.573 14.9291 114.608 14.9291C114.643 14.9291 114.678 14.9729 114.696 14.9991L115.449 16.2511L116.202 14.9991C116.202 14.9991 116.254 14.9379 116.289 14.9291C116.324 14.9203 116.342 14.9028 116.342 14.9028C116.342 14.9028 116.359 14.9028 116.403 14.9203L116.368 14.9116Z\"><\/path>\n<path d=\"M147.028 13.8347L148.621 11.8211C148.621 11.8211 145.916 10.7792 143.482 13.6246L143.622 12.4427C143.622 12.4427 139.665 12.5127 139.665 16.7413C139.665 16.7413 136.478 17.5643 134.499 17.2053C133.738 14.6401 131.102 9.36096 129.509 7.2773C128.599 6.09539 127.268 4.26563 125.613 3.15376C125.911 2.32205 127.005 1.97185 127.005 1.97185C127.005 1.97185 126.025 1.10512 123.81 0.991309C122.024 0.895005 121.463 2.04189 121.306 2.49715C119.931 3.3989 119.318 4.61582 119.318 4.61582C119.318 4.61582 121.376 4.58956 121.673 5.63139C121.822 6.13917 121.621 8.90571 121.49 13.1518C121.35 17.6168 121.253 20.1732 123.67 23.9816C124.886 25.8989 126.156 27.4485 127.408 28.7092C128.345 30.6003 129.483 32.5351 130.201 33.0254C130.104 34.1985 129.956 36.0458 129.956 36.0458C129.956 36.0458 128.993 36.0283 128.24 36.0283C127.487 36.0283 127.373 36.4485 127.968 36.466C128.187 36.466 129.859 36.466 130.472 36.466C131.085 36.466 132.346 36.5448 132.346 36.2384C132.346 35.932 130.393 36.0633 130.393 36.0633C130.393 36.0633 130.402 34.0759 130.849 33.0954C131.304 32.9728 131.82 32.6664 132.302 32.325C133.676 32.9903 134.867 33.2792 135.751 33.2968C136.005 34.1898 137.073 36.5098 137.073 36.5098C137.073 36.5098 135.585 36.431 134.972 36.5711C134.359 36.7112 134.447 36.895 134.885 36.965C135.314 37.0351 137.029 36.9213 137.502 36.9213C137.975 36.9213 139.84 37.0001 139.997 36.7287C140.234 36.3347 137.634 36.5185 137.546 36.5185C137.458 36.5185 136.242 33.6294 136.382 33.1392C138.886 31.6946 142.396 21.2938 142.79 20.8473C143.21 20.3658 148.481 15.5769 149.243 13.7034C148.551 13.4933 147.019 13.8434 147.019 13.8434L147.028 13.8347ZM122.628 4.02925C122.488 4.02925 122.365 3.91543 122.365 3.7666C122.365 3.61777 122.479 3.50395 122.628 3.50395C122.777 3.50395 122.89 3.61777 122.89 3.7666C122.89 3.91543 122.777 4.02925 122.628 4.02925Z\"><\/path>\n<path d=\"M119.371 2.44473C119.516 2.44473 119.634 2.32713 119.634 2.18208C119.634 2.03702 119.516 1.91943 119.371 1.91943C119.226 1.91943 119.108 2.03702 119.108 2.18208C119.108 2.32713 119.226 2.44473 119.371 2.44473Z\"><\/path>\n<\/svg>",
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 90,
+          "show_country_selector": false,
+          "show_locale_selector": false,
+          "navigation_menu": "main-menu",
+          "navigation_style": "logoLeft",
+          "show_icons": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
+          "transparent_text_color": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "get flygrubs in your inbox",
+              "content": "<p>For the latest on product launches and offers!<\/p>"
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "connect",
+              "email": "emily@flygrubs.com",
+              "call": "Weekdays 10:30am to 5:30pm",
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "footer-2",
+          "footer-1",
+          "footer-0"
+        ],
+        "settings": {
+          "show_payment_methods": true,
+          "show_country_selector": true,
+          "show_locale_selector": true,
+          "marquee_1": "A  HEALTHIER CHOICE",
+          "marquee_2": "THE EARTH  THANKS YOU"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
+        }
+      },
+      "announcement-de": {
+        "type": "announcement-de",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "content": "Announce something here",
+          "link": ""
+        }
+      },
+      "announcement-up": {
+        "type": "announcement-up",
+        "settings": {
+          "enable_bar": false,
+          "home_page_only": false,
+          "background": "#00504e",
+          "text_color": "#ffffff",
+          "content": "Check out our new range of nutritious grubs for your chickens and reptiles. Shop Now!",
+          "link": "https:\/\/flygrubs.com\/collections\/shop"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1990815452989453926": {
+        "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-js\/807ad6ed-1a6a-4559-abea-ed062858d9da",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6279071938380501511": {
+        "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "judgeme_core_b5d328f8": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2153490007123654574": {
+        "type": "shopify:\/\/apps\/consentmo-gdpr\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14952540001915115444": {
+        "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Vogue": {
+      "heading_color": "#303030",
+      "text_color": "#303030",
+      "text_light_color": "#595959",
+      "link_color": "#000000",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#f5db8b",
+      "button_text_color": "#303030",
+      "header_background": "#ffffff",
+      "header_heading_color": "#303030",
+      "header_light_color": "#595959",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#303030",
+      "footer_text_color": "#595959",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#303030",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#303030",
+      "secondary_elements_background": "#fce7a8",
+      "secondary_elements_text_color": "#303030",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+<footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
+  <div class="">
+    {%- if section.blocks.size > 0 -%}
+      <div class="Footer__Inner">
+        {%- for block in section.blocks -%}
+          <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                <div {{ block.shopify_attributes }}>
+                  {% if  block.settings.title != blank %}
+                    <div class="Footer__Title Heading u-h6">{{ block.settings.title }}</div>
+                  {% endif %}
+                  <div class="content">
+                    <div class="contact-options">
+                      <ul>
+                        {% if  block.settings.email != blank %}
+                          <li>
+                            <div class="icon"><svg viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M23.0478 0.509766H4.2652C3.43496 0.509766 2.63872 0.839579 2.05165 1.42665C1.46458 2.01372 1.13477 2.80996 1.13477 3.6402V15.3793C1.13477 16.2096 1.46458 17.0058 2.05165 17.5929C2.63872 18.18 3.43496 18.5098 4.2652 18.5098H23.0478C23.8781 18.5098 24.6743 18.18 25.2614 17.5929C25.8484 17.0058 26.1782 16.2096 26.1782 15.3793V3.6402C26.1782 2.80996 25.8484 2.01372 25.2614 1.42665C24.6743 0.839579 23.8781 0.509766 23.0478 0.509766ZM24.613 15.3793C24.613 15.7945 24.4481 16.1926 24.1546 16.4861C23.8611 16.7796 23.4629 16.9445 23.0478 16.9445H4.2652C3.85008 16.9445 3.45196 16.7796 3.15842 16.4861C2.86489 16.1926 2.69998 15.7945 2.69998 15.3793V3.6402C2.69998 3.22508 2.86489 2.82696 3.15842 2.53342C3.45196 2.23989 3.85008 2.07498 4.2652 2.07498H23.0478C23.4629 2.07498 23.8611 2.23989 24.1546 2.53342C24.4481 2.82696 24.613 3.22508 24.613 3.6402V15.3793Z" stroke-width="0.8"/>
+                              <path d="M21.7707 4.60108L13.6567 11.2376L5.54273 4.60108C5.38209 4.4695 5.17576 4.40713 4.96913 4.42767C4.76251 4.44822 4.5725 4.55001 4.44093 4.71065C4.30935 4.87128 4.24697 5.07761 4.26752 5.28424C4.28806 5.49087 4.38985 5.68087 4.55049 5.81245L13.1592 12.8559C13.2991 12.9706 13.4744 13.0333 13.6553 13.0333C13.8362 13.0333 14.0115 12.9706 14.1514 12.8559L22.7601 5.81245C22.8396 5.7473 22.9056 5.66712 22.9541 5.57649C23.0027 5.48586 23.0329 5.38655 23.0431 5.28424C23.0533 5.18193 23.0432 5.07861 23.0134 4.9802C22.9837 4.88178 22.9348 4.79019 22.8697 4.71065C22.8045 4.63111 22.7243 4.56518 22.6337 4.51663C22.5431 4.46807 22.4438 4.43785 22.3415 4.42767C22.2392 4.4175 22.1358 4.42758 22.0374 4.45733C21.939 4.48708 21.8474 4.53593 21.7679 4.60108H21.7707Z" stroke-width="0.8"/>
+                              </svg></div>
+                            <div class="label">{{ block.settings.email }}</div>
+                          </li>
+                        {% endif %}
+                        {% if  block.settings.call != blank %}
+                        <li>
+                          <div class="icon"><svg viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.46758 0.585757C3.27903 0.594157 3.09399 0.639659 2.92305 0.719656C2.75211 0.799653 2.59862 0.912576 2.47137 1.05196L0.614723 3.09345C0.617177 3.08731 0.607362 3.08813 0.554607 3.16256C0.526847 3.20105 0.505064 3.24352 0.489992 3.28852C-0.265752 5.69765 0.24094 8.34439 1.47516 10.8631C2.70938 13.3819 4.67808 15.7926 6.93836 17.7703C9.19864 19.748 11.7485 21.2959 14.1801 22.0643C16.6117 22.8327 18.9693 22.8217 20.7164 21.5543C20.7355 21.5404 20.7534 21.5249 20.77 21.5081C20.8158 21.4623 20.817 21.4566 20.8109 21.4632L20.8182 21.4546L22.6659 19.4221C22.9211 19.1392 23.0542 18.7669 23.0363 18.3863C23.0184 18.0058 22.8508 17.6477 22.5702 17.39L18.1862 13.4027C17.9033 13.1476 17.5311 13.0144 17.1506 13.0323C16.77 13.0501 16.4119 13.2175 16.1541 13.498L14.1703 15.6793C12.5602 15.2127 11.1849 14.4226 9.85951 13.2183C8.53409 12.0139 7.61845 10.7167 7.00093 9.15738L8.98394 6.97604C9.23912 6.69307 9.37226 6.3208 9.35442 5.94019C9.33658 5.55958 9.16919 5.2014 8.88866 4.94355L4.50468 0.956676C4.36492 0.829725 4.20148 0.731611 4.02372 0.66796C3.84596 0.60431 3.65738 0.576374 3.4688 0.585757H3.46758ZM3.50847 1.48054C3.57951 1.47753 3.65044 1.48867 3.71713 1.51332C3.78383 1.53796 3.84496 1.57561 3.89698 1.62409L8.28095 5.61136C8.33442 5.65804 8.37789 5.71504 8.40878 5.77894C8.43966 5.84283 8.45731 5.91231 8.46067 5.9832C8.46404 6.05409 8.45304 6.12493 8.42834 6.19147C8.40364 6.258 8.36575 6.31885 8.31694 6.37038L6.12454 8.77992C6.06937 8.84074 6.0319 8.91549 6.01618 8.99609C6.00047 9.07668 6.00711 9.16004 6.03539 9.23713C6.70076 11.0529 7.77385 12.5423 9.25058 13.8853C10.7273 15.2283 12.3104 16.1566 14.1805 16.6473C14.2601 16.6684 14.344 16.6671 14.4229 16.6437C14.5019 16.6204 14.5729 16.5758 14.6283 16.5148L16.8199 14.1049C16.8666 14.0515 16.9236 14.0081 16.9875 13.9773C17.0514 13.9465 17.1208 13.9289 17.1917 13.9256C17.2626 13.9223 17.3333 13.9334 17.3998 13.9582C17.4663 13.9829 17.5271 14.0209 17.5785 14.0697L21.9629 18.0566C22.0163 18.1033 22.0597 18.1603 22.0905 18.2242C22.1213 18.2881 22.1389 18.3575 22.1422 18.4284C22.1454 18.4992 22.1344 18.57 22.1096 18.6365C22.0848 18.703 22.0469 18.7638 21.9981 18.8152L20.1651 20.8289C18.7313 21.8578 16.7115 21.9155 14.4496 21.2014C12.1791 20.4849 9.71392 19 7.53175 17.0902C5.34958 15.1804 3.45122 12.849 2.28407 10.4652C1.12919 8.11047 0.710418 5.72832 1.34552 3.62754L3.13633 1.66007C3.18341 1.607 3.24053 1.56377 3.30441 1.53289C3.36828 1.502 3.43764 1.48407 3.50847 1.48013V1.48054Z" stroke-width="0.8"/>
+                            </svg></div>
+                          <div class="label">{{ block.settings.call }}</div>
+                        </li>
+                      {% endif %}
+                      </ul>
+                    </div>
+                    {% if block.settings.show_social_media %}
+                      <div class="social-wrap">
+                        {% render 'social-media', class: 'Footer__Social', spacing: 'loose' %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+
+              {%- when 'links' -%}
+                {%- assign linklist = linklists[block.settings.menu] -%}
+
+                {%- if linklist != empty -%}
+                  
+                    {%- for link in linklist.links -%}
+                      <div class="Footer__Links">
+                      <h2 class="Footer__Title Heading u-h6">{{ link.title | escape }}</h2>
+                      
+                        {% if link.links.size > 0 %}
+                          <ul class="Linklist">
+                            {% for grandchild_link in link.links %}
+                              <li class="menu-link">
+                                <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </div>
+                    {%- endfor -%}
+                  
+                {%- endif -%} 
+                {% comment %} <div class="Footer__Links__Wrap">
+                  <div class="Footer__Links">
+                    <h2 class="Footer__Title Heading u-h6">About</h2>
+                    <ul class="Linklist">
+                      <li class="Linklist__Item"><a href="/pages/about-us" class="Link Link--primary">Our Story</a></li>
+                      <li class="Linklist__Item"><a href="/blogs/news" class="Link Link--primary">Blog</a></li>
+                    </ul>
+                    <h2 class="Footer__Title Heading u-h6">Account</h2>
+                    <ul class="Linklist">
+                      <li class="Linklist__Item"><a href="/account/login" class="Link Link--primary">My Account</a></li>
+                      <li class="Linklist__Item"><a href="/account/login" class="Link Link--primary">Orders & Returns</a></li>
+                    </ul>
+                  </div>
+                  <div class="Footer__Links">
+                    <h2 class="Footer__Title Heading u-h6">Customer care</h2>
+                    <ul class="Linklist">
+                      <li class="Linklist__Item"><a href="#" class="Link Link--primary">FAQ's</a></li>
+                      <li class="Linklist__Item"><a href="/pages/privacy-policy" class="Link Link--primary">Shipping & Returns</a></li>
+                      <li class="Linklist__Item"><a href="/policies/refund-policy" class="Link Link--primary">Refund policy</a></li>
+                      <li class="Linklist__Item"><a href="/pages/privacy-policy" class="Link Link--primary">Privacy Policy</a></li>
+                      <li class="Linklist__Item"><a href="/policies/terms-of-service" class="Link Link--primary">Terms of Service</a></li>
+                      <li class="Linklist__Item"><a href="/pages/contact-us" class="Link Link--primary">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div> {% endcomment %}
+
+
+              {%- when 'newsletter' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="Footer__Content Rte">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+
+                {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+                  {%- if form.posted_successfully? -%}
+                    <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+                  {%- else -%}
+                    {%- if form.errors -%}
+                      <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                    {%- endif -%}
+
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                    <button type="submit" class="Form__Submit Button Submit"><svg viewBox="0 0 31 8" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M30.3877 4.52518C30.583 4.32992 30.583 4.01334 30.3877 3.81808L27.2058 0.636097C27.0105 0.440835 26.6939 0.440835 26.4986 0.636097C26.3034 0.831359 26.3034 1.14794 26.4986 1.3432L29.3271 4.17163L26.4986 7.00006C26.3034 7.19532 26.3034 7.5119 26.4986 7.70716C26.6939 7.90243 27.0105 7.90243 27.2058 7.70716L30.3877 4.52518ZM0.0341797 4.67163H30.0342V3.67163H0.0341797V4.67163Z" fill="black"/>
+                      </svg></button>
+                  {%- endif -%}
+                {%- endform -%}
+                <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">&copy; {{'now' | date: '%Y' }} {{ shop.name }}</a>
+            {%- endcase -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    <div class="Ticker__Wrap">
+      <div class="wrap">
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+        <span>{{ section.settings.marquee_1 }}</span>
+        <span>{{ section.settings.marquee_2 }}</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{%- if settings.footer_background == settings.background -%}
+  <style>
+    .Footer {
+      border-top: 1px solid var(--text-color);
+      border-bottom: 1px solid var(--text-color);
+    }
+  </style>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "shopify-section--footer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_methods",
+      "label": "Show payment methods",
+      "info": "Payment method icons are automatically displayed based on your Shopify payment methods.",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Country/region selector",
+      "info": "To add a country/region, go to your [currency settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country/region selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "marquee_1",
+      "label": "Marquee Text 1",
+      "default": "A  HEALTHIER CHOICE"
+    },
+    {
+      "type": "text",
+      "id": "marquee_2",
+      "label": "Marquee Text 2",
+      "default": "THE EARTH  THANKS YOU"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text / social media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "call",
+          "label": "Call"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "links",
+        "settings": {
+          "menu": "footer"
+        }
+      },
+      {
+        "type": "newsletter",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

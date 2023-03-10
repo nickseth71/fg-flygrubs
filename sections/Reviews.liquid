@@ -1,0 +1,115 @@
+{%- capture flickity_options -%}
+{
+    "prevNextButtons": true,
+    "pageDots": false,
+    "wrapAround": false,
+    "contain": true,
+    "freeScroll": true,
+    "cellAlign": "left",
+    "dragThreshold": 8,
+    "groupCells": false,
+    "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+  }
+{%- endcapture -%}
+
+<section class="Section Reviews__BG Section--spacingNormal" data-section-id="{{ section.id }}" id="section-{{ section.id }}" >
+  <div class="Container Reviews ProductList--carousel" id="section-{{ section.id }}" data-flickity='{{ flickity_options }}'>
+  {% for block in section.blocks %}
+<div class="FeatureText FeatureText--withImage ">
+  <div class="BG_review">
+  {%- if block.settings.image != blank -%}
+    <div class="FeatureText__ImageWrapper">
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
+      <div class="AspectRatio" style="max-width: {{ block.settings.image.width }};    margin: 0; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+        {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        <img class="Image--lazyLoad Image--slide{{ block.settings.image_position | capitalize }}" data-src="{{ image_url }}" data-expand="0" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}">
+        <noscript>
+          <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">
+        </noscript>
+      </div>
+    </div>
+  {%- endif -%}
+    <div class="Name_Date">
+    <span class="date Heading">{{ block.settings.date }}</span>
+        <span class="name Heading">{{ block.settings.name }}</span>
+    </div>
+  <div class="FeatureText__ContentWrapper">
+      <div class="FeatureText__Content">
+        {%- if block.settings.title != blank  -%}
+          <header class="SectionHeader">
+            {%- if block.settings.title != blank -%}
+              <h2 class="SectionHeader__Heading Heading u-h1">{{ block.settings.title | escape }}</h2>
+            {%- endif -%}
+
+            {%- if block.settings.content != blank -%}
+              <div class="SectionHeader__Description Rte line-clamp">
+                {{ block.settings.content }}
+              </div>
+            {%- endif -%}
+          </header>
+        {%- endif -%}
+      </div>
+    <div class="verified">
+Verified
+    </div>
+    </div>   
+  </div>
+</div>
+  {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "class": "shopify-section--bordered",
+  "settings": [
+   
+  ]
+  ,
+  "blocks": [
+    {
+      "type": "text",
+      "name": "text",
+      "settings": [
+         {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+         {
+      "type": "text",
+      "id": "date",
+      "label": "date"
+    },
+      {
+      "type": "text",
+      "id": "name",
+      "label": "name"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+    
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Reviews",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

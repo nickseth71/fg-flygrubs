@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "db1ca7a5-6a28-4f3b-9743-e9f6af099448": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14458182074448__db1ca7a5-6a28-4f3b-9743-e9f6af099448-16739504251b186c00-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_235.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_235_1.jpg",
+            "apply_overlay": false,
+            "content_position": "middleCenter",
+            "subheading": "",
+            "title": "Subscription cancellation form",
+            "content": "<p>We would like to know the reason of your cancellation. <br\/>Message us, we're excited to hear from you! We always reply within 24 hours.<\/p>",
+            "contentMob": "<p>We would like to know the<br\/> reason of your cancellation. <br\/>Message us, we're excited to <br\/>hear from you! We always<br\/> reply within 24 hours. <\/p>",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14458182074448__db1ca7a5-6a28-4f3b-9743-e9f6af099448-16739504251b186c00-0"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "fe7de35b-689a-4e70-a5ff-236cafb9c70d": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "color": "",
+        "colortext": "",
+        "subheading": "",
+        "title": "Terms & Conditions",
+        "image_position": "right",
+        "content": "<p>You'll be informed about the early access through email on the email address that you use while subscribing.<\/p><p>The offer will last only till stocks last so we recommend you to take advantage of the early access.<\/p><p>You'll receive the 15% discount coupon separately. This discount can't be clubbed with any other offers.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "f3a6016b-1552-4229-a76a-f36efa9d6ab4": {
+      "type": "text-with-image",
+      "settings": {
+        "color": "",
+        "colortext": "",
+        "subheading": "",
+        "title": "",
+        "image_position": "right",
+        "content": "<p>E-Mail us: <a href=\"mailto:emily@flygrubs.com\" title=\"mailto:emily@flygrubs.com\">emily@flygrubs.com<\/a><br\/>Text us: 855-537-0997 (Weekdays 10:30am to 5:30pm)<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "a9cfcb9c-ecbb-4cdd-b694-e9a4725c88a4": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p>Reach out with the form below:<\/p>\n\n<div class=\"globo-formbuilder\" data-id=\"MTAzMDc2\"><\/div>",
+        "image": "shopify:\/\/shop_images\/image_39.png",
+        "image2": "shopify:\/\/shop_images\/image_60.png",
+        "image3": "shopify:\/\/shop_images\/image_53.png",
+        "image4": "shopify:\/\/shop_images\/image_52.png",
+        "image5": "shopify:\/\/shop_images\/image_52_1.png"
+      }
+    }
+  },
+  "order": [
+    "db1ca7a5-6a28-4f3b-9743-e9f6af099448",
+    "main",
+    "fe7de35b-689a-4e70-a5ff-236cafb9c70d",
+    "f3a6016b-1552-4229-a76a-f36efa9d6ab4",
+    "a9cfcb9c-ecbb-4cdd-b694-e9a4725c88a4"
+  ]
+}

@@ -1,0 +1,63 @@
+<style>
+ 
+.mobile_banner {
+  display: none;
+}
+.desk_banner {
+   display: block;
+ }
+@media (max-width: 1024px) {
+  .mobile_banner {
+   display: block;
+ }
+    .desk_banner {
+    display: none;
+  } 
+}
+
+  .desk_banner img{
+    width:100%;
+  }
+</style>
+<div class="image_banner-wrap">
+  <div class="image_banner-main">
+    <div class="desk_banner">
+      {% if section.settings.desk_image != blank %}
+      <img src="{{ section.settings.desk_image | img_url:'original' }}"/>
+      {% endif %}   
+    </div>
+    <div class="mobile_banner">
+      {% if section.settings.mob_image != blank %}
+       <img src="{{ section.settings.mob_image | img_url:'original' }}"/>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Page Banner",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"desk_image",
+        "label":"Desktop Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"mob_image",
+        "label":"Mobile Image"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Page Banner"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product-variants",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "64e0f95b-e08c-4048-988d-8b5c67e49246": {
+          "type": "reviews",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": true,
+            "size_chart": ""
+          }
+        },
+        "cb28d190-283a-432f-92c3-839113b597a2": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+          "settings": {
+            "primary_color": "#007861",
+            "secondary_color": "#003d5e",
+            "header_text": "Purchase Options",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": true,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "64e0f95b-e08c-4048-988d-8b5c67e49246",
+        "description",
+        "variant_selector",
+        "cb28d190-283a-432f-92c3-839113b597a2",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": false,
+        "enable_video_looping": true
+      }
+    },
+    "165402254707c6f625": {
+      "type": "home-graph",
+      "disabled": true,
+      "blocks": {
+        "85339ec4-7d58-443b-9443-ed32ad0bd927": {
+          "type": "graph",
+          "settings": {
+            "title": "Crude Protein",
+            "val1": "85",
+            "val2": "75"
+          }
+        },
+        "dd5159f9-d306-4fd2-ba80-f3b035d95943": {
+          "type": "graph",
+          "settings": {
+            "title": "Calcium",
+            "val1": "15",
+            "val2": "5"
+          }
+        },
+        "9b8e4ea5-f291-4b2d-aed7-58195f4d7506": {
+          "type": "graph",
+          "settings": {
+            "title": "Fiber",
+            "val1": "15",
+            "val2": "15"
+          }
+        },
+        "f681abca-8439-4c09-8e7c-ce4fe58a7253": {
+          "type": "graph",
+          "settings": {
+            "title": "Moisture",
+            "val1": "20",
+            "val2": "15"
+          }
+        },
+        "56eea5fe-a21a-4ed6-86fb-1c13e72133dc": {
+          "type": "graph",
+          "settings": {
+            "title": "Crude Fat",
+            "val1": "55",
+            "val2": "45"
+          }
+        },
+        "c4375fa6-fd68-4c9b-a4d9-fc105b3807e1": {
+          "type": "graph",
+          "settings": {
+            "title": "Lysine",
+            "val1": "8",
+            "val2": "8"
+          }
+        },
+        "40f28c66-ee96-4897-a72b-3daa208a0c3c": {
+          "type": "graph",
+          "settings": {
+            "title": "Phosphorus",
+            "val1": "5",
+            "val2": "5"
+          }
+        }
+      },
+      "block_order": [
+        "85339ec4-7d58-443b-9443-ed32ad0bd927",
+        "dd5159f9-d306-4fd2-ba80-f3b035d95943",
+        "9b8e4ea5-f291-4b2d-aed7-58195f4d7506",
+        "f681abca-8439-4c09-8e7c-ce4fe58a7253",
+        "56eea5fe-a21a-4ed6-86fb-1c13e72133dc",
+        "c4375fa6-fd68-4c9b-a4d9-fc105b3807e1",
+        "40f28c66-ee96-4897-a72b-3daa208a0c3c"
+      ],
+      "settings": {
+        "location": "both",
+        "title": "flygrubs vs mealworms",
+        "subheading": "FLYGRUBS® are a high-protein, healthier & more affordable alternative to mealworms."
+      }
+    },
+    "1654058573a84987c6": {
+      "type": "product-faqs",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Frequently asked questions"
+      }
+    },
+    "165362893854bf0123": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "section_size": "preserveRatio",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=o5bzSPnWbRU&t=4s"
+      }
+    },
+    "165362920523719de5": {
+      "type": "apps",
+      "blocks": {
+        "93ea2ca0-7256-4178-a28c-9dcf0a7b7105": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": true,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "93ea2ca0-7256-4178-a28c-9dcf0a7b7105"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "165402254707c6f625",
+    "1654058573a84987c6",
+    "165362893854bf0123",
+    "165362920523719de5",
+    "zp-product-footer-content"
+  ]
+}

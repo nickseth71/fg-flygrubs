@@ -1,0 +1,429 @@
+{% assign mainproduct = product.metafields.accentuate.similar_items | split: '|' %}
+
+{% if mainproduct != blank %}
+  <div class="similar_items">
+    {% if block.settings.similar_items_title != blank %}
+      <p>{{ block.settings.similar_items_title }}</p>
+    {% endif %}
+
+    {% for products in product.metafields.accentuate.similar_items %}
+      {% assign product = all_products[products] %}
+      <div class="similar_items_product">
+        <div class="flex_items">
+         
+          <div class="product_image">
+            {% assign image = product.featured_image %}
+            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: image -%}{%- endcapture -%}
+            <div class="" style="max-width: {{ image.width }}px;">
+              {%- assign image_url = image | img_url: '400x'  -%}
+              <img
+                class="Image--lazyLoad"
+                src="{{ image_url }}"
+                data-widths="[{{ supported_sizes }}]"
+                data-sizes="auto"
+                alt="{{ section.settings.image.alt | escape }}"
+              >
+              <noscript>
+                <img src="{{ image| img_url: '800x' }}" alt="{{ image.alt | escape }}">
+              </noscript>
+            </div>
+          </div>
+          <div class="product_data">
+      {% if product.metafields.stamped.badge != blank  %}
+            <span
+              class="stamped-product-reviews-badge stamped-main-badge"
+              data-id="{{ product.id }}"
+              data-product-sku="{{ product.handle }}"
+              data-product-title="{{product.title}}"
+              data-product-type="{{product.type}}"
+              style="display: block;"
+            >
+              {{ product.metafields.stamped.badge }}
+            </span>
+        {% endif %}
+            <h1 class="ProductMeta__Title Heading u-h2">
+              {{ product.title }}
+            </h1>
+            <div class="ProductMeta__PriceList" data-price="{{ product.selected_or_first_available_variant.price }}">
+              {%- if settings.currency_code_enabled -%}
+                {%- if product.selected_or_first_available_variant.compare_at_price
+                    > product.selected_or_first_available_variant.price
+                -%}
+                  <span class="ProductMeta__Price Price ProductPrice__copy Price--highlight Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  </span>
+                  <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
+                  </span>
+                {%- else -%}
+                  <span class="ProductMeta__Price ProductPrice__copy Price Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  </span>
+                {%- endif -%}
+              {%- else -%}
+                {%- if product.selected_or_first_available_variant.compare_at_price
+                    > product.selected_or_first_available_variant.price
+                -%}
+                  <span class="ProductMeta__Price Price ProductPrice__copy Price--highlight Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.price | money -}}
+                  </span>
+                  <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+                  </span>
+                {%- else -%}
+                  <span class="ProductMeta__Price ProductPrice__copy Price Text--subdued u-h4">
+                    {{- product.selected_or_first_available_variant.price | money -}}
+                  </span>
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+        <div class="main_btn">
+          <button
+            onclick="_addMeToCart(event,this)"
+           
+            data-variant_id="{{ product.selected_or_first_available_variant.id }}"
+            type="submit"
+          >
+            <span> One-time Purchase</span>
+          </button>
+
+          <div
+            class="drop_btn"
+            {% if product.selected_or_first_available_variant.available %}
+            {% else %}
+              disabled="disabled"
+            {% endif %}
+          >
+            {%- if product.selected_or_first_available_variant.available -%}
+              <span>
+                {% for group in product.selling_plan_groups %}
+                  {{- group.name -}}
+                  <span class="sale_per" style="padding-left: 5px;"> </span>
+                  <script>
+                      var plan = {{ group | json }};
+                     var per = plan.selling_plans[0].price_adjustments[0].value
+                    document.querySelector(".sale_per").innerHTML = +' '+ per + '%' ;
+                  </script>
+                {% endfor %}
+              </span>
+              <span><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="padding-left: 5px;">
+<path d="M-0.000165939 -0.00032711L7.33317 7.33301L14.6665 -0.00032711L-0.000165939 -0.00032711Z" fill="black"/>
+</svg>
+
+</span>
+
+            {%- else -%}
+              {{- 'product.form.sold_out' | t -}}
+            {%- endif -%}
+            <div class="dropdown">
+              {% for group in product.selling_plan_groups %}
+                {% for plan in group.selling_plans %}
+                  <div class="vales" data-id="{{ plan.id }}" data-variant_id="{{ product.selected_or_first_available_variant.id }}" onclick="_addMeToCart(event,this)" data-plan="{{ plan.id }}">
+                    <input type="radio" value="{{ plan.id }}" name="plan_{{ plan.id }}">
+
+                    <svg class="show" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M24,12 C24,18.627 18.627,24 12,24 C5.373,24 0,18.627 0,12 C0,5.373 5.373,0 12,0 C18.627,0 24,5.373 24,12 Z M7.0050175,11.4087067 C6.61372743,11.0189496 5.98056367,11.0201924 5.59080666,11.4114825 C5.20104965,11.8027726 5.20229244,12.4359363 5.5935825,12.8256933 L9.9325825,17.1476933 C10.3226506,17.5362331 10.9534086,17.5363886 11.3436681,17.1480412 L19.5076681,9.02404115 C19.8991503,8.63447708 19.9007052,8.00131401 19.5111412,7.60983186 C19.1215771,7.2183497 18.488414,7.21679478 18.0969319,7.60635885 L10.6386478,15.0281006 L7.0050175,11.4087067 Z"></path>
+                    </svg>
+                    <svg class="hide" viewBox="0 0 18 18" fill="none">
+                      <circle cx="9" cy="9" r="9" fill="white" fill-opacity="0.1"></circle>
+                      <circle cx="9" cy="9" r="8.5" stroke="black" stroke-opacity="0.2"></circle>
+                    </svg>
+
+                    <span class="plan_name">{{ plan.name }} </span>
+                    <span class="plan_price"> </span>
+                  </div>
+                {% endfor %}
+           
+                 <script>
+                {% for currency in shop.enabled_currencies %}
+                  
+                  var currency = {{ currency.symbol | json}}
+                  
+                  {% endfor %}
+                      var plan = {{ group | json }};
+                     var per = plan.selling_plans[0].price_adjustments[0].value / 100;
+                      var price =  document.querySelector(".product_data .ProductMeta__PriceList").getAttribute('data-price');
+                      var mainprice = price - ( price * per ) ;
+               
+
+                              
+                    document.querySelectorAll(".plan_price").forEach(div => {div.innerHTML =  currency +(mainprice/ 100).toFixed(2) }) ;
+
+               document.querySelector('.drop_btn').onclick = function() {
+                                  this.classList.toggle('active_show');
+                              }
+                  </script>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    {% endfor %}
+  </div>
+  <style>
+
+.vales svg,
+.vales input {
+	display: none;
+	width: 28px;
+}
+
+.drop_btn.active_show .dropdown {
+	display: block;
+}
+
+.dropdown {
+	display: none;
+	padding: 12px 8px;
+	position: absolute;
+	z-index: 9999;
+	bottom: -101px;
+	background: #f4f5f2;
+	width: 100%;
+	left: 0;
+	right: 0;
+	-webkit-box-shadow: 0px 12px 16px #dbdbdb;
+	        box-shadow: 0px 12px 16px #dbdbdb;
+}
+
+.similar_items_product {}
+
+.check_product {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 10%;
+	        flex: 0 1 10%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.product_image {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 30%;
+	        flex: 0 1 30%;
+}
+
+.product_data {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding-left: 20px;
+}
+
+.main_btn>button,
+.main_btn .drop_btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-radius: 100px 0 0px 100px;
+	text-align: center;
+	padding: 9px 12px;
+	border-top: 1px solid;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	letter-spacing: 1px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.vales svg.hide {
+	display: block;
+}
+
+.vales {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding-bottom: 10px;
+}
+
+.main_btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex_items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px 15px 10px 16px;
+}
+
+.similar_items_product {
+
+
+	border-radius: 8px 8px 23px 23px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+	margin-bottom: 32px;
+	border-bottom: 0;
+}
+
+.main_btn .drop_btn {
+	position: relative;
+	border-radius: 0 100px 100px 0;
+	border-left: 0;
+	cursor: pointer;
+}
+
+.similar_items {
+	margin: 30px 0;
+}
+
+.similar_items input[type="checkbox"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: 120ms -webkit-transform ease-in-out;
+	transition: 120ms -webkit-transform ease-in-out;
+	-o-transition: 120ms transform ease-in-out;
+	transition: 120ms transform ease-in-out;
+	transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+	-webkit-box-shadow: inset 1em 1em var(--form-control-color);
+	        box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.similar_items input[type="checkbox"]:checked::before {
+	background: red
+}
+
+.similar_items p span {
+	background: #03ff61;
+	color: #000;
+	padding: 3px 4px;
+      color: #000000;
+    padding: 3px 4px;
+    text-shadow: 0px 2px 0px rgb(255 255 255);
+      font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+@media(max-width:640px) {
+	.main_btn {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		padding: 0 20px 10px;
+	}
+
+	.main_btn .drop_btn {
+		border-radius: 100px;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 100%;
+		        flex: 1 100%;
+	}
+
+	.main_btn>button,
+	.main_btn .drop_btn {
+		margin: 5px 0;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		border-radius: 100px;
+	}
+
+	.similar_items_product .ProductMeta__Title {
+		margin-bottom: 0;
+		font-size: 13px !important;
+	}
+
+	.similar_items_product {
+
+		border-bottom: 1px solid;
+	}
+}
+
+.vales.active_show_svg svg.show {
+	display: block;
+}
+
+.vales.active_show_svg svg.hide {
+	display: none;
+}
+
+.product_data h1.ProductMeta__Title.Heading.u-h2 {
+	font-size: 15px;
+}
+  </style>
+  <script>
+        function _addMeToCart(e, el) {
+      e = e || window.event;
+      e.preventDefault();
+      document.dispatchEvent(new CustomEvent("theme:loading:start"));
+      let formData = {
+        items: [
+          {
+            id: el.dataset.variant_id,
+            quantity: 1,
+            selling_plan:el.dataset.plan
+          },
+        ],
+      };
+
+      fetch("/cart/add.js", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((resp) => {
+          return resp.json();
+        })
+        .then((data) => {
+          document.dispatchEvent(new CustomEvent("theme:loading:end"));
+          // document.documentElement.dispatchEvent(
+          //   new CustomEvent("cart:refresh", {
+          //     bubbles: true,
+          //   })
+          // );
+          document.dispatchEvent(
+            new CustomEvent("product:added", {
+              bubbles: true,
+              detail: {
+                variant: el.dataset.variant_id,
+                quantity: 1,
+              },
+            })
+          );
+              el.classList.toggle('active_show_svg');
+        })
+        .catch((err) => {
+          console.error("Error: " + err);
+        });
+    }
+
+   
+  </script>
+{% endif %}

@@ -1,0 +1,28 @@
+@font-face {
+    font-family:"Moon-Bold";
+    src:url("Moon-bold.woff2") format("woff2"),
+    url("Moon-bold.woff") format("woff");
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family:"Gibson-Light";
+    src:url("Gibson-Light.woff2") format("woff2"),
+    url("Gibson-Light.woff") format("woff");
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family:"Gibson-Regular";
+    src:url("Gibson-Regular.woff2") format("woff2"),
+    url("Gibson-Regular.woff") format("woff");
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family:"Gibson-SemiBold";
+    src:url("Gibson-SemiBold.woff2") format("woff2"),
+    url("Gibson-SemiBold.woff") format("woff");
+    font-style:normal;
+    font-weight:400;
+}

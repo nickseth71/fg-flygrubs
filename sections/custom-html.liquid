@@ -1,0 +1,153 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+  <div class="Container">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+<div class="form_mobile_image hidden-tablet-and-up" style="text-align: center">
+ {%- if section.settings.image5 != blank -%}
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image5 -%}{%- endcapture -%}
+      {%- assign image_url = section.settings.image5 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="img_src ab_5" style="max-width: 160px;margin: 0 auto 34px auto;">
+        <img
+          class="Image--lazyLoad "
+          data-src="{{ image_url }}"
+          data-widths="[{{ supported_sizes }}]"
+          data-sizes="auto"
+          alt="{{ section.settings.image5.alt | escape }}"
+        >
+      </div>
+    {%- endif -%}
+</div>
+    <div class="Rte" style="text-align: center">
+      {{ section.settings.html }}
+    </div>
+  </div>
+  <div class="extra__images">
+    {%- if section.settings.image != blank -%}
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image -%}{%- endcapture -%}
+      {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="img_src ab_1" style="max-width: 170px;">
+        <img
+          class="Image--lazyLoad "
+          data-src="{{ image_url }}"
+          data-widths="[{{ supported_sizes }}]"
+          data-sizes="auto"
+          alt="{{ section.settings.image.alt | escape }}"
+        >
+      </div>
+    {%- endif -%}
+    {%- if section.settings.image2 != blank -%}
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image2 -%}{%- endcapture -%}
+      {%- assign image_url = section.settings.image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="img_src ab_2" style="max-width: 140px;">
+        <img
+          class="Image--lazyLoad "
+          data-src="{{ image_url }}"
+          data-widths="[{{ supported_sizes }}]"
+          data-sizes="auto"
+          alt="{{ section.settings.image.alt | escape }}"
+        >
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.image3 != blank -%}
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image3 -%}{%- endcapture -%}
+      {%- assign image_url = section.settings.image3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="img_src ab_3" style="max-width: 110px;">
+        <img
+          class="Image--lazyLoad "
+          data-src="{{ image_url }}"
+          data-widths="[{{ supported_sizes }}]"
+          data-sizes="auto"
+          alt="{{ section.settings.image3.alt | escape }}"
+        >
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.image4 != blank -%}
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image4 -%}{%- endcapture -%}
+      {%- assign image_url = section.settings.image4 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="img_src ab_4" style="max-width: 110px;">
+        <img
+          class="Image--lazyLoad "
+          data-src="{{ image_url }}"
+          data-widths="[{{ supported_sizes }}]"
+          data-sizes="auto"
+          alt="{{ section.settings.image4.alt | escape }}"
+        >
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your HTML"
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML content",
+      "default": "<p>Write your own custom HTML content.</p>"
+    },
+     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+     {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+     {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+     {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+      {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom HTML",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
