@@ -1,0 +1,61 @@
+<section
+  class="Section"
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-gallery">
+  <div class="Container image-gallery-section">
+    {% if section.settings.title != blank %}
+      <div class="section-header SectionHeader SectionHeader--center">
+        <h3 class="heading SectionHeader__Heading Heading">{{ section.settings.title }}</h3>
+      </div>
+    {% endif %}
+    <div class="image-gallery-wrap">
+      <div class="ig-grid">
+        {% for block in section.blocks %}
+          {% if block.settings.image != blank %}
+            <div class="ig-grid-item">
+              <img
+                src="{{ block.settings.image | img_url: '300X300' }}"
+                width="400px"
+                height="400px"
+                loading="lazy" />
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Image Gallery",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Flygrubs will be enjoyed by:"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Image Gallery",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
