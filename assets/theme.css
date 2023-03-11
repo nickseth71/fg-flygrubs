@@ -13258,6 +13258,29 @@ input:checked + .bsub-widget__group-header {
   margin-bottom: 5px;
 }
 
+.product-testimonials-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.product-testimonials-wrap .pt-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-testimonials-wrap .pt-grid-item {
+  width: 25%;
+  padding-right: 40px;
+}
+
+.product-testimonials-wrap .pt-grid-item .pt-content-wrap {
+  padding-top: 35px;
+}
+
+.product-testimonials-wrap .pt-grid-item .pt-content-wrap .title {
+  font-weight: bold;
+}
+
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;

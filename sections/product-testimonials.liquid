@@ -1,0 +1,59 @@
+{% if section.settings.enable == true %}
+  <section
+    class="Section"
+    id="section-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="product-testimonials">
+    <div class="Container product-testimonials-section">
+      {% assign ptData = product.metafields.custom.product_testimonials.value %}
+      {% if ptData != blank %}
+        {% if ptData.heading != blank %}
+          <div class="section-header SectionHeader">
+            <h3 class="heading SectionHeader__Heading Heading">{{ ptData.heading }}</h3>
+          </div>
+        {% endif %}
+        <div class="product-testimonials-wrap">
+          <div class="pt-grid">
+            {% for i in (0..19) %}
+              {% if ptData.image.value[i] != blank or ptData.title.value[i] != blank or ptData.text.value[i] != blank %}
+                <div class="pt-grid-item">
+                  {% for img in ptData.image.value %}
+                    {% if img != blank and forloop.index0 == i %}
+                      <div class="pt-image {{i}}">
+                        <img src="{{ img | img_url: '400X400' }}" loading="lazy" />
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                  <div class="pt-content-wrap">
+                    <h3 class="title">{{ ptData.title.value[i] }}</h3>
+                    <p class="text">{{ ptData.text.value[i] }}</p>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Testimonials",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Product Testimonials",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
