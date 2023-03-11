@@ -1,0 +1,63 @@
+{% if section.settings.enable == true %}
+  <section
+    class="Section"
+    id="section-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="product-videos">
+    <div class="Container product-desc-section">
+      {% assign productDesc = product.metafields.custom.product_description.value %}
+      {% if productDesc != blank %}
+        {% if productDesc.heading != blank %}
+          <div class="section-header SectionHeader">
+            <h3 class="heading SectionHeader__Heading Heading">{{ productDesc.heading }}</h3>
+          </div>
+        {% endif %}
+        <div class="product-desc-wrap">
+          <div class="pv-grid">
+            {% if productDesc.top_image.value != blank %}
+              <div class="pd-grid-item top-image">
+                <div class="image-wrap">
+                  <img src="{{ productDesc.top_image.value | img_url: 'original' }}" />
+                </div>
+              </div>
+            {% endif %}
+            {% if productDesc.left_image.value != blank or productDesc.right_content.value != blank %}
+              <div class="pd-grid-item image-text">
+                {% if productDesc.left_image.value != blank %}
+                  <div class="image-wrap">
+                    <img src="{{ productDesc.left_image.value | img_url: 'original' }}" />
+                  </div>
+                {% endif %}
+                {% if productDesc.right_content.value != blank %}
+                  <div class="content-wrap">
+                    {{ productDesc.right_content | metafield_tag }}
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Description",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Product Description",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

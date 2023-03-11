@@ -1,0 +1,31 @@
+{% if section.settings.enable == true %}
+  <div style="width:85% ; margin:0 auto ;">
+    {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+  </div>
+  <script>
+    window.ShopifyXR = window.ShopifyXR || function() {
+      (ShopifyXR.q = ShopifyXR.q || []).push(arguments)
+    };
+    ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
+  </script>
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Review",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Product Review",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

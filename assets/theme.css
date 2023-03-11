@@ -13281,6 +13281,30 @@ input:checked + .bsub-widget__group-header {
   font-weight: bold;
 }
 
+.product-desc-section {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.product-desc-section .section-header {
+  margin-bottom: 25px;
+}
+
+.product-desc-wrap .pd-grid-item.image-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-desc-wrap .pd-grid-item.image-text .image-wrap {
+  width: 50%;
+}
+
+.product-desc-wrap .pd-grid-item.image-text .content-wrap {
+  width: 50%;
+  padding: 40px;
+}
+
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;
