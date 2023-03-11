@@ -13210,7 +13210,53 @@ input:checked + .bsub-widget__group-header {
 .image-gallery-wrap .ig-grid .ig-grid-item img {
   border-radius: 100%;
 }
+.product-videos-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+.product-video-wrap .pv-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-video-wrap .pv-grid .ig-grid-item {
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-video-wrap .pv-video video {
+  width: 100%;
+}
+
+.pv-review-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #aaa;
+  padding: 10px;
+}
+
+.pv-review-wrap .profile-icon {
+  width: 20%;
+}
+
+.pv-review-wrap .review-content {
+  width: 75%;
+}
+
+.pv-review-wrap .review-content p {
+  margin: 0;
+  line-height: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.pv-review-wrap .review-content p.review {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
