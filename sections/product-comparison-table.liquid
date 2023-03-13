@@ -4,7 +4,7 @@
     id="section-{{ section.id }}"
     data-section-id="{{ section.id }}"
     data-section-type="product-comparison">
-    <div class="product-comparison-section">
+    <div class="Container product-comparison-section">
       {% assign productComparison = product.metafields.custom.comparison_table.value %}
       {% if productComparison != blank %}
         {% if productComparison.heading != blank %}
@@ -13,9 +13,23 @@
           </div>
         {% endif %}
         <div class="product-comparison-wrap">
-          {% for contentt in productComparison.comparison_content.value %}
-            <p>{{ contentt }}</p>
-          {% endfor %}
+          {% if productComparison.comparison_content.value != blank %}
+            <table>
+              <tr>
+                <th class="first-column"></th>
+                <th class="second-column">Flygrubs</th>
+                <th class="third-column">Other Brands</th>
+              </tr>
+              {% for contentt in productComparison.comparison_content.value %}
+                {% assign contenttArr = contentt | split: ',' %}
+                <tr>
+                  <td class="first-column">{{ contenttArr[0] }}</td>
+                  <td class="second-column">{{ contenttArr[1] }}</td>
+                  <td class="third-column">{{ contenttArr[2] }}</td>
+                </tr>
+              {% endfor %}
+            {% endif %}
+          </table>
         </div>
       {% endif %}
     </div>

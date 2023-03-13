@@ -98,6 +98,12 @@
         "enable": true
       }
     },
+    "a52e4ce3-94e9-44cb-a6f5-5574945b38b9": {
+      "type": "product-comparison-table",
+      "settings": {
+        "enable": true
+      }
+    },
     "1ee83f89-d65f-4951-a366-6682f378d9a4": {
       "type": "image-gallery",
       "settings": {
@@ -427,6 +433,7 @@
     "main",
     "2d611465-4955-40aa-bf33-76be33bec159",
     "50d5ca35-3b8c-44fd-9a1b-f8d096eead7b",
+    "a52e4ce3-94e9-44cb-a6f5-5574945b38b9",
     "1ee83f89-d65f-4951-a366-6682f378d9a4",
     "50ff4bbb-0ae6-47bc-bc7e-6e47bfb37a3c",
     "d74255c4-5a6a-4538-a2eb-4a9e12d5f9fa",

@@ -13324,6 +13324,41 @@ input:checked + .bsub-widget__group-header {
   display: none;
 }
 
+.product-comparison-wrap table {
+  margin: auto;
+  width: 60%;
+  min-width: 320px;
+}
+
+.product-comparison-wrap table th {
+  text-align: left;
+  padding: 15px 0;
+}
+
+.product-comparison-section {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.product-comparison-wrap table td {
+  color: #000;
+  font-size: 14px;
+  line-height: 47px;
+  border: 1px solid #000000;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.product-comparison-wrap table td.second-column {
+  background-color: #00504E;
+  color: #fff;
+}
+
+.product-comparison-wrap table th.second-column {
+  color: #00504E;
+}
+
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;
