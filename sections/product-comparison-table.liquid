@@ -21,7 +21,7 @@
                 <th class="third-column">Other Brands</th>
               </tr>
               {% for contentt in productComparison.comparison_content.value %}
-                {% assign contenttArr = contentt | split: ',' %}
+                {% assign contenttArr = contentt | split: '~' %}
                 <tr>
                   <td class="first-column">{{ contenttArr[0] }}</td>
                   <td class="second-column">{{ contenttArr[1] }}</td>
@@ -30,8 +30,8 @@
               {% endfor %}
             {% endif %}
           </table>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
     </div>
   </section>
 {% endif %}
