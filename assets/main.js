@@ -53,4 +53,22 @@ $(function(){
     event.preventDefault(); 
 
   });
+
+  // $(document).on('click','.product-lifestyle-wrap img.video-play-icon', function(){
+  //   $(this).parents('.product-lifestyle-wrap').find('video').get(0).play();
+  //   $(this).parents('.product-lifestyle-wrap').addClass('play');
+  // });
+
+  $(document).on('click','.product-lifestyle-wrap .video-icon-wrap', function(){
+    const lVideo = $(this).find('video').get(0);
+    console.log('lVideo ',lVideo.paused);
+    if(lVideo.paused){
+         lVideo.play();
+         $(this).parents('.product-lifestyle-wrap').addClass('play');   
+    }else{
+      lVideo.pause();
+      $(this).parents('.product-lifestyle-wrap').removeClass('play');
+    }
+});
+
 });

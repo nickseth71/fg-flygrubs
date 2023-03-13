@@ -13305,6 +13305,25 @@ input:checked + .bsub-widget__group-header {
   padding: 40px;
 }
 
+.product-lifestyle-wrap .pv-grid {
+    position: relative;
+}
+
+.product-lifestyle-wrap img.video-play-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    cursor: pointer;
+}
+.product-lifestyle-wrap .pv-grid img.border-image {
+  margin-bottom: -10px;
+}
+.product-lifestyle-wrap.play img.video-play-icon {
+  display: none;
+}
+
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;
