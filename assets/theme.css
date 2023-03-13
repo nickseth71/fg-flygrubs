@@ -13358,6 +13358,21 @@ input:checked + .bsub-widget__group-header {
 .product-comparison-wrap table th.second-column {
   color: #00504E;
 }
+.product-ingredients-grid {
+  background-color: #173E5D;
+  color: #fff;
+  display: flex;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.product-ingredients-grid .pi-gi {
+  width: 20%;
+  text-align: center;
+}
+.product-digram-grid img {
+  width: 100%;
+}
 
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {

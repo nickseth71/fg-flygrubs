@@ -4,7 +4,7 @@
     id="section-{{ section.id }}"
     data-section-id="{{ section.id }}"
     data-section-type="product-ingredients">
-    <div class="Container product-ingredients-section">
+    <div class="product-ingredients-section">
       {% assign productIngredients = product.metafields.custom.product_ingredients_and_digram.value %}
       {% if productIngredients != blank %}
         {% if productIngredients.heading != blank %}
