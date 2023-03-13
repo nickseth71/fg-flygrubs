@@ -13374,6 +13374,22 @@ input:checked + .bsub-widget__group-header {
   width: 100%;
 }
 
+.product-video-wrap .pv-video {
+  position: relative;
+}
+
+.product-video-wrap .pv-video img.video-play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  cursor: pointer;
+}
+.pv-video.play img.video-play-icon {
+  display: none;
+}
+
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;

@@ -18,13 +18,14 @@
               {% if pvData.video_url.value[i] != blank %}
                 <div class="ig-grid-item">
                   <div class="pv-video">
-                    <video
-                      width="500"
-                      height="300"
-                      controls>
+                    <video width="500">
                       <source src="{{ pvData.video_url.value[i] }}" type="video/mp4">
                       <source src="{{ pvData.video_url.value[i] }}" type="video/ogg">
                     </video>
+                    <img
+                      class="video-play-icon"
+                      src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/Group_803.png?v=1678688072"
+                      loading="lazy" />
                   </div>
                   <div class="pv-review-wrap">
                     <div class="profile-icon">

@@ -71,4 +71,15 @@ $(function(){
     }
 });
 
+$(document).on('click','.product-video-wrap .pv-video', function(){
+  const video = $(this).find('video').get(0);
+  if(video.pause){
+      video.play();
+      $(this).addClass('play');
+  }else{
+      video.pause();
+      $(this).removeClass('play');
+  }
+});
+
 });
