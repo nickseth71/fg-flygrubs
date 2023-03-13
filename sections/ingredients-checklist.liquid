@@ -15,27 +15,28 @@
         <div class="product-ingredients-wrap">
           {% if productIngredients.ingredients_checklist.value != blank %}
             <div class="product-ingredients-grid">
-                {% for ingredient in productIngredients.ingredients_checklist.value %}
-                    <div class="pi-gi">
-                        <span class="tick"><img src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/Vector_4.png?v=1678701286" loading="lazy"/></span>
-                        {{ ingredient }}
-                        </div>
-                {% endfor %}
+              {% for ingredient in productIngredients.ingredients_checklist.value %}
+                <div class="pi-gi">
+                  <span class="tick"><img src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/Vector_4.png?v=1678701286" loading="lazy" /></span>
+                  {{ ingredient }}
+                </div>
+              {% endfor %}
             </div>
           {% endif %}
-          
+
           {% if productIngredients.diagram.value != blank %}
-          <div class="product-digram-grid">
-            <img src="{{ productIngredients.diagram | img_url: 'original' }}" loading="lazy" />
-          </div>
-         {% endif %}
+            <div class="product-digram-grid">
+              <img src="{{ productIngredients.diagram | img_url: 'original' }}" loading="lazy" />
+            </div>
+          {% endif %}
         </div>
+      {% endif %}
     </div>
   </section>
 {% endif %}
 {% schema %}
   {
-    "name": "Product Ingredients Checklist",
+    "name": "Ingredients Checklist",
     "settings": [
       {
         "type": "checkbox",
@@ -47,7 +48,7 @@
     "presets": [
       {
         "category": "Text",
-        "name": "Product Ingredients Checklist",
+        "name": "Ingredients Checklist",
         "settings": {}
       }
     ]
