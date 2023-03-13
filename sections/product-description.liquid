@@ -17,7 +17,7 @@
             {% if productDesc.top_image.value != blank %}
               <div class="pd-grid-item top-image">
                 <div class="image-wrap">
-                  <img src="{{ productDesc.top_image.value | img_url: 'original' }}" />
+                  <img src="{{ productDesc.top_image.value | img_url: '1920x' }}" />
                 </div>
               </div>
             {% endif %}
@@ -25,7 +25,7 @@
               <div class="pd-grid-item image-text">
                 {% if productDesc.left_image.value != blank %}
                   <div class="image-wrap">
-                    <img src="{{ productDesc.left_image.value | img_url: 'original' }}" />
+                    <img src="{{ productDesc.left_image.value | img_url: '1280x' }}" />
                   </div>
                 {% endif %}
                 {% if productDesc.right_content.value != blank %}

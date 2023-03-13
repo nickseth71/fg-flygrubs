@@ -13217,29 +13217,34 @@ input:checked + .bsub-widget__group-header {
 
 .product-video-wrap .pv-grid {
   display: flex;
-  flex-wrap: wrap;
+ gap:30px;
 }
 
 .product-video-wrap .pv-grid .ig-grid-item {
-  width: 25%;
-  padding: 10px;
-  border-radius: 10px;
+/*   width: 25%; */
+  padding: 0;
+  border-radius: 20px;overflow:hidden; position:relative;
 }
 
 .product-video-wrap .pv-video video {
-  width: 100%;
+  width: 100%;display:block;min-height:260px;object-fit:cover;
 }
-
+.product-desc-wrap .top-image .image-wrap img {
+    min-height: 262px;
+    object-fit: cover;
+}
 .pv-review-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #aaa;
-  padding: 10px;
+   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 0; position:absolute; bottom:0; left:0; right:0;align-items:flex-start;padding: 8px
 }
-
+.pv-review-wrap .profile-icon img{display:block;width:80%; margin:auto;}
 .pv-review-wrap .profile-icon {
-  width: 20%;
+  width: 20%; text-align:center;
 }
 
 .pv-review-wrap .review-content {
@@ -13284,7 +13289,7 @@ input:checked + .bsub-widget__group-header {
 .product-desc-section {
   background-color: #fff;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
 }
 
 .product-desc-section .section-header {
@@ -13367,8 +13372,18 @@ input:checked + .bsub-widget__group-header {
 }
 
 .product-ingredients-grid .pi-gi {
-  width: 20%;
-  text-align: center;
+width: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-ingredients-grid .pi-gi span.tick {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center; border:solid 2px #fff;margin-right:15px;
 }
 .product-digram-grid img {
   width: 100%;
@@ -13389,12 +13404,71 @@ input:checked + .bsub-widget__group-header {
 .pv-video.play img.video-play-icon {
   display: none;
 }
-
+.product-testimonials-wrap .pt-grid .pt-grid-item .pt-image {
+    width: 142px;
+    height: 142px;
+    background: #173E5D;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    border: solid 5px #01FF61; align-items:center; justify-content:center;
+}
+.product-testimonials-wrap .pt-grid .pt-grid-item .pt-image svg{width:60px; height:60px;}
+.product-comparison-wrap .first-column {
+    width: 40%;
+}
+.product-comparison-wrap .second-column {
+    width: 30%; padding-left:10%
+}
+.product-comparison-wrap .third-column {
+    width: 30%; padding-left:10%
+}
+.product-comparison-wrap th.second-column, .product-comparison-wrap th.third-column {text-align:center; padding-left:0}
+.product-lifestyle-wrap .pv-grid svg {
+    width: 100%;
+    position: relative;
+    bottom: -20px;
+}
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;
     padding: 10px;
   }
+  .product-desc-wrap .pd-grid-item.image-text > div {
+    min-width: 100%;
 }
-
+  .product-desc-wrap .pd-grid-item.image-text {
+    flex-direction: column;
+}
+  .product-testimonials-wrap .pt-grid {
+    flex-direction: column;
+}
+  .product-testimonials-wrap .pt-grid-item {
+    min-width: 100%;
+    padding: 0; margin-bottom:30px
+}
+  .product-testimonials-wrap .pt-grid .pt-grid-item .pt-image {
+    width: 92px;
+    height: 92px;
+    margin: 0;
+}
+    .product-testimonials-wrap .pt-grid .pt-grid-item .pt-image img{width:40px; height:40px}
+  .product-testimonials-wrap .pt-grid-item .pt-content-wrap {
+    padding-top: 10px;
+}
+  .product-testimonials-wrap .pt-grid-item .pt-content-wrap .title{margin-bottom:0;}
+  .product-ingredients-grid {
+    flex-direction: column;
+}
+  .product-ingredients-grid .pi-gi {min-width: 180px;
+    margin: auto auto 15px auto;
+    justify-content: flex-start;}
+    .product-ingredients-grid .pi-gi:last-child{margin-bottom:0}
+  .product-lifestyle-wrap .pv-grid svg{width:auto;}
+  .product-video-wrap .pv-grid{flex-direction: column;}
+  .product-tab-desktop{display:none}
+}
+@media(min-width:641px) {
+  .product-tab-mobile{display:none}
+}
 /* eshop css end here */

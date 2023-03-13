@@ -14,10 +14,7 @@
         {% endif %}
         <div class="product-lifestyle-wrap">
           <div class="pv-grid">
-            <img
-              class="border-image"
-              src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/border-image.png?v=1678689525"
-              loading="lazy" />
+            {% include 'border-green' %}
             {% if productLifeStyle.video.value != blank %}
               <div class="video-icon-wrap">
                 <video width="100%" height="100%">

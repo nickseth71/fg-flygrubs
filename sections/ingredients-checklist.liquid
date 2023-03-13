@@ -26,7 +26,7 @@
 
           {% if productIngredients.diagram.value != blank %}
             <div class="product-digram-grid">
-              <img src="{{ productIngredients.diagram | img_url: 'original' }}" loading="lazy" />
+              <img src="{{ productIngredients.diagram | img_url: '1920x' }}" loading="lazy" />
             </div>
           {% endif %}
         </div>

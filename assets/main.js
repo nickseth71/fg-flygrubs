@@ -73,7 +73,8 @@ $(function(){
 
 $(document).on('click','.product-video-wrap .pv-video', function(){
   const video = $(this).find('video').get(0);
-  if(video.pause){
+  console.log('video status ',video.pause);
+  if(video.paused){
       video.play();
       $(this).addClass('play');
   }else{
