@@ -18,7 +18,13 @@
               {% if pvData.video_url.value[i] != blank %}
                 <div class="ig-grid-item">
                   <div class="pv-video">
-                    <video width="500">
+                    <video
+                      width="500"
+                      loop
+                      playsinline
+                      {% if pvData.video_thumbnail_image_url.value[i] %}
+                      poster="{{ pvData.video_thumbnail_image_url.value[i]}}"
+                      {% endif %}>
                       <source src="{{ pvData.video_url.value[i] }}" type="video/mp4">
                       <source src="{{ pvData.video_url.value[i] }}" type="video/ogg">
                     </video>

@@ -13221,7 +13221,7 @@ input:checked + .bsub-widget__group-header {
 }
 
 .product-video-wrap .pv-grid .ig-grid-item {
-/*   width: 25%; */
+  width: 25%;
   padding: 0;
   border-radius: 20px;overflow:hidden; position:relative;
 }
@@ -13299,6 +13299,7 @@ input:checked + .bsub-widget__group-header {
 .product-desc-wrap .pd-grid-item.image-text {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .product-desc-wrap .pd-grid-item.image-text .image-wrap {
@@ -13312,6 +13313,7 @@ input:checked + .bsub-widget__group-header {
 
 .product-lifestyle-wrap .pv-grid {
     position: relative;
+    overflow: hidden;
 }
 
 .product-lifestyle-wrap img.video-play-icon {
@@ -13363,6 +13365,9 @@ input:checked + .bsub-widget__group-header {
 .product-comparison-wrap table th.second-column {
   color: #00504E;
 }
+.product-comparison-wrap td.third-column {
+  background-color: #F4F5F2;
+}
 .product-ingredients-grid {
   background-color: #173E5D;
   color: #fff;
@@ -13410,7 +13415,6 @@ width: 20%;
     background: #173E5D;
     border-radius: 50%;
     display: flex;
-    margin: auto;
     border: solid 5px #01FF61; align-items:center; justify-content:center;
 }
 .product-testimonials-wrap .pt-grid .pt-grid-item .pt-image svg{width:60px; height:60px;}
@@ -13435,6 +13439,9 @@ width: 20%;
 .product-tab-mobile{
   display:none
 }
+.product-desc-wrap .has-mobile-image img.mobile-only {
+  display: none;
+}
 @media(max-width:1008px) {
   .product-tab-desktop {display:none}
   .product-tab-mobile{display:block}
@@ -13446,6 +13453,9 @@ width: 20%;
   }
   .product-desc-wrap .pd-grid-item.image-text > div {
     min-width: 100%;
+}
+.product-desc-wrap .pd-grid-item.image-text .image-wrap {
+  order: 2;
 }
   .product-desc-wrap .pd-grid-item.image-text {
     flex-direction: column;
@@ -13476,6 +13486,15 @@ width: 20%;
     .product-ingredients-grid .pi-gi:last-child{margin-bottom:0}
   .product-lifestyle-wrap .pv-grid svg{width:auto;}
   .product-video-wrap .pv-grid{flex-direction: column;}
+  .product-video-wrap .pv-grid .ig-grid-item {
+    width: 100%;
+  }
+  .product-desc-wrap .has-mobile-image img.desktop-only {
+    display: none;
+  }
+  .product-desc-wrap .has-mobile-image img.mobile-only {
+    display: block;
+  }
 }
 
 /* eshop css end here */
