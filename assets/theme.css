@@ -13195,6 +13195,14 @@ input:checked + .bsub-widget__group-header {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.image-gallery-section .section-header {
+  margin-bottom: 40px;
+}
+.section-header .heading {
+  font-size: 25px;
+  color: #000;
+  font-weight: 700;
+}
 
 .image-gallery-wrap .ig-grid {
   display: flex;
@@ -13213,6 +13221,7 @@ input:checked + .bsub-widget__group-header {
 .product-videos-section {
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #fff;
 }
 
 .product-video-wrap .pv-grid {
@@ -13234,6 +13243,8 @@ input:checked + .bsub-widget__group-header {
     object-fit: cover;
 }
 .pv-review-wrap {
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13275,15 +13286,19 @@ input:checked + .bsub-widget__group-header {
 
 .product-testimonials-wrap .pt-grid-item {
   width: 25%;
-  padding-right: 40px;
+  padding: 0 20px
 }
 
 .product-testimonials-wrap .pt-grid-item .pt-content-wrap {
   padding-top: 35px;
 }
 
+.product-testimonials-wrap .pt-grid-item .pt-content-wrap p.text {
+  color: #000;
+}
+
 .product-testimonials-wrap .pt-grid-item .pt-content-wrap .title {
-  font-weight: bold;
+  font-weight: bold;font-size:20px; color:#000;
 }
 
 .product-desc-section {
@@ -13351,9 +13366,8 @@ input:checked + .bsub-widget__group-header {
 .product-comparison-wrap table td {
   color: #000;
   font-size: 14px;
-  line-height: 47px;
   border: 1px solid #000000;
-  padding: 0 10px;
+  padding: 8px 10px;
   font-weight: bold;
 }
 
@@ -13377,11 +13391,13 @@ input:checked + .bsub-widget__group-header {
 }
 
 .product-ingredients-grid .pi-gi {
-width: 20%;
+    width: 20%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 .product-ingredients-grid .pi-gi span.tick {
     display: flex;
@@ -13419,7 +13435,16 @@ width: 20%;
 }
 .product-testimonials-wrap .pt-grid .pt-grid-item .pt-image svg{width:60px; height:60px;}
 .product-comparison-wrap .first-column {
-    width: 40%;
+  width: 40%;
+}
+.product-comparison-wrap td {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.product-comparison-wrap table th {
+  font-size: 20px !important;
+  font-weight: bold !important;
 }
 .product-comparison-wrap .second-column {
     width: 30%; padding-left:10%
@@ -13429,10 +13454,19 @@ width: 20%;
 }
 .product-comparison-wrap th.second-column, .product-comparison-wrap th.third-column {text-align:center; padding-left:0}
 .product-lifestyle-wrap .pv-grid svg {
-    width: 100%;
+    width: auto%;
     position: relative;
     bottom: -20px;
+    z-index: 1;
 }
+.product-lifestyle-wrap .video-icon-wrap {
+  position: relative;
+}
+
+.product-lifestyle-wrap .video-icon-wrap video {
+  width: 100%;object-fit:cover;
+}
+
 .product-tab-desktop {
   margin-left: 50px;
 }
@@ -13442,9 +13476,51 @@ width: 20%;
 .product-desc-wrap .has-mobile-image img.mobile-only {
   display: none;
 }
+.product-desc-wrap .pd-grid-item.image-text .content-wrap strong {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.product-desc-wrap .pd-grid-item.image-text .content-wrap p {
+  font-size: 16px;
+  color: #000;
+}
+@media(min-width:1440px){
+  .product-lifestyle-wrap .pv-grid svg{
+    width: 100%;
+  }
+}
+
 @media(max-width:1008px) {
   .product-tab-desktop {display:none}
   .product-tab-mobile{display:block}
+  .product-video-wrap .pv-grid {
+    flex-wrap: wrap;
+ }
+  .product-video-wrap .pv-grid .ig-grid-item{
+    width: calc(50% - 30px);
+  }
+  .product-comparison-wrap table th {
+    font-size: 14px !important;
+}
+.product-comparison-wrap td {
+  font-size: 14px;
+}
+.product-ingredients-grid .pi-gi{
+  font-size: 14px;
+}
+.product-desc-wrap .pd-grid-item.image-text .content-wrap strong {
+  font-size: 14px;
+}
+.product-desc-wrap .pd-grid-item.image-text .content-wrap p {
+  font-size: 14px;
+}
+.section-header .heading {
+  font-size: 20px;
+}
+
+
 }
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
@@ -13496,5 +13572,5 @@ width: 20%;
     display: block;
   }
 }
-
+@media(min-width:980px) {.product-comparison-wrap table th, .product-comparison-wrap table td{font-size:20px}}
 /* eshop css end here */
