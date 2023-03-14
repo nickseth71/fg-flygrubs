@@ -13429,6 +13429,16 @@ width: 20%;
     position: relative;
     bottom: -20px;
 }
+.product-tab-desktop {
+  margin-left: 50px;
+}
+.product-tab-mobile{
+  display:none
+}
+@media(max-width:1008px) {
+  .product-tab-desktop {display:none}
+  .product-tab-mobile{display:block}
+}
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
     width: 33.33%;
@@ -13466,9 +13476,6 @@ width: 20%;
     .product-ingredients-grid .pi-gi:last-child{margin-bottom:0}
   .product-lifestyle-wrap .pv-grid svg{width:auto;}
   .product-video-wrap .pv-grid{flex-direction: column;}
-  .product-tab-desktop{display:none}
 }
-@media(min-width:641px) {
-  .product-tab-mobile{display:none}
-}
+
 /* eshop css end here */
