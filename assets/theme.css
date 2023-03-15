@@ -13586,7 +13586,9 @@ input:checked + .bsub-widget__group-header {
     padding: 0 40px;
 }
 } */
-
+.template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
+  margin-bottom: 0;
+}
 /* End Css  */
 
 
