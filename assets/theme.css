@@ -13581,7 +13581,12 @@ input:checked + .bsub-widget__group-header {
 .Template__.template-product.flygrubs-gdpr .Product__InfoWrapper {
   font-family: "Nunito", "sans-serif" !important;
 }
-
+@media (max-width: 1300px) {
+.template-product.flygrubs-gdpr   .product-desc-wrap .pd-grid-item.image-text .content-wrap {
+    width: 50%;
+    padding: 0 40px;
+}
+}
 /* End Css  */
 
 
