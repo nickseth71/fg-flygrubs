@@ -13589,6 +13589,9 @@ input:checked + .bsub-widget__group-header {
 .template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
   margin-bottom: 0;
 }
+.template-product.flygrubs-gdpr  .product-comparison-wrap table td.second-column {
+  font-weight: 400;
+}
 /* End Css  */
 
 
