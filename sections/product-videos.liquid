@@ -34,12 +34,15 @@
                       loading="lazy" />
                   </div>
                   <div class="pv-review-wrap">
-                    <div class="profile-icon">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/video-user.svg?v=1678713482"
-                        loading="lazy"
-                        \>
-                    </div>
+
+                    {% if pvData.profile_image_url.value[i] != blank %}
+                      <div class="profile-icon">
+                        <img
+                          src="{{ pvData.profile_image_url.value[i] }}"
+                          loading="lazy"
+                          \>
+                      </div>
+                    {% endif %}
                     <div class="review-content">
                       <p class="review">{{ pvData.review.value[i] }}</p>
                       <p class="name">{{ pvData.name.value[i] }}</p>

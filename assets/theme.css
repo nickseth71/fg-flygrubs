@@ -13196,7 +13196,7 @@ input:checked + .bsub-widget__group-header {
   padding-bottom: 40px;
 }
 .image-gallery-section .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .section-header .heading {
   font-size: 25px;
@@ -13215,8 +13215,18 @@ input:checked + .bsub-widget__group-header {
   padding: 20px;
 }
 
+.image-gallery-wrap .ig-grid .ig-grid-item h3 {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .image-gallery-wrap .ig-grid .ig-grid-item img {
   border-radius: 100%;
+}
+.product-digram-grid.has-mobile-image img.mobile-only {
+  display: none;
 }
 .product-videos-section {
   padding-top: 40px;
@@ -13477,7 +13487,7 @@ input:checked + .bsub-widget__group-header {
   display: none;
 }
 .product-desc-wrap .pd-grid-item.image-text .content-wrap strong {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   font-weight: bold;
 }
@@ -13486,6 +13496,41 @@ input:checked + .bsub-widget__group-header {
   font-size: 16px;
   color: #000;
 }
+
+/* .Template__.template-product.flygrubs-gdpr .Product__InfoWrapper,
+.Template__.template-product.flygrubs-gdpr .product-desc-section,
+.Template__.template-product.flygrubs-gdpr .product-testimonials-section,
+.Template__.template-product.flygrubs-gdpr .product-video-wrap {
+  font-family: "Nunito", "sans-serif" !important;
+} */
+body.template-product h1,
+body.template-product h2,
+body.template-product h3,
+body.template-product h4,
+body.template-product p,
+body.template-product a,
+body.template-product div{
+  font-family: "Nunito", "sans-serif" !important;
+}
+
+.template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
+  margin-bottom: 0;
+}
+.template-product.flygrubs-gdpr  .product-comparison-wrap table td.second-column {
+  font-weight: 400;
+}
+.template-product.flygrubs-gdpr .product-videos-section .SectionHeader {
+  margin-bottom: 25px;
+}
+
+.Product__Tabs button.Collapsible__Button {
+  font-size: 16px;
+}
+
+.Product__Tabs .Collapsible__Content .Rte {
+  font-size: 16px;
+}
+
 @media(min-width:1440px){
   .product-lifestyle-wrap .pv-grid svg{
     width: 100%;
@@ -13511,7 +13556,7 @@ input:checked + .bsub-widget__group-header {
   font-size: 14px;
 }
 .product-desc-wrap .pd-grid-item.image-text .content-wrap strong {
-  font-size: 14px;
+  font-size: 16px;
 }
 .product-desc-wrap .pd-grid-item.image-text .content-wrap p {
   font-size: 14px;
@@ -13519,8 +13564,6 @@ input:checked + .bsub-widget__group-header {
 .section-header .heading {
   font-size: 20px;
 }
-
-
 }
 @media(max-width:640px){
   .image-gallery-wrap .ig-grid .ig-grid-item {
@@ -13571,6 +13614,18 @@ input:checked + .bsub-widget__group-header {
   .product-desc-wrap .has-mobile-image img.mobile-only {
     display: block;
   }
+  .product-digram-grid.has-mobile-image img.desktop-only {
+    display: none;
+  }
+  .product-digram-grid.has-mobile-image img.mobile-only {
+    display: block !important;
+  }
+
+}
+@media (max-width: 480px) {
+.template-product.flygrubs-gdpr  .product-comparison-wrap table th {
+    font-size: 16px!important;
+}
 }
 @media(min-width:980px) {.product-comparison-wrap table th, .product-comparison-wrap table td{font-size:20px}}
 /* eshop css end here */

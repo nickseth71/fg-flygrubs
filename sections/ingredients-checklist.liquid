@@ -25,8 +25,17 @@
           {% endif %}
 
           {% if productIngredients.diagram.value != blank %}
-            <div class="product-digram-grid">
-              <img src="{{ productIngredients.diagram | img_url: '1920x' }}" loading="lazy" />
+            <div class="product-digram-grid{% if productIngredients.diagram_mobile.value != blank %} has-mobile-image{% endif %}">
+              <img
+                class="desktop-only"
+                src="{{ productIngredients.diagram | img_url: 'master' }}"
+                loading="lazy" />
+              {% if productIngredients.diagram_mobile.value != blank %}
+                <img
+                  class="mobile-only"
+                  src="{{ productIngredients.diagram_mobile | img_url: 'master' }}"
+                  loading="lazy" />
+              {% endif %}
             </div>
           {% endif %}
         </div>
