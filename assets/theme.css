@@ -13581,17 +13581,12 @@ input:checked + .bsub-widget__group-header {
 .Template__.template-product.flygrubs-gdpr .Product__InfoWrapper {
   font-family: "Nunito", "sans-serif" !important;
 }
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) and (min-width: 820px){
 .template-product.flygrubs-gdpr .pd-grid-item.image-text .content-wrap {
     padding: 0 40px;
 }
-}
-@media (max-width: 1200px) {
-  .product-desc-wrap .pd-grid-item.image-text .image-wrap,
-  .product-desc-wrap .pd-grid-item.image-text .content-wrap {
-    width: 100%;
-  }
-}
+} */
+
 /* End Css  */
 
 
