@@ -13584,11 +13584,6 @@ input:checked + .bsub-widget__group-header {
 .Template__.template-product.flygrubs-gdpr .product-video-wrap {
   font-family: "Nunito", "sans-serif" !important;
 }
-/* @media (max-width: 1300px) and (min-width: 820px){
-.template-product.flygrubs-gdpr .pd-grid-item.image-text .content-wrap {
-    padding: 0 40px;
-}
-} */
 .template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
   margin-bottom: 0;
 }
