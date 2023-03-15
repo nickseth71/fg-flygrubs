@@ -13582,8 +13582,7 @@ input:checked + .bsub-widget__group-header {
   font-family: "Nunito", "sans-serif" !important;
 }
 @media (max-width: 1300px) {
-.template-product.flygrubs-gdpr   .product-desc-wrap .pd-grid-item.image-text .content-wrap {
-    width: 50%;
+.template-product.flygrubs-gdpr .pd-grid-item.image-text .content-wrap {
     padding: 0 40px;
 }
 }
