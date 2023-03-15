@@ -13595,6 +13595,11 @@ input:checked + .bsub-widget__group-header {
 .template-product.flygrubs-gdpr .product-videos-section .SectionHeader {
   margin-bottom: 40px;
 }
+@media (max-width: 480px) {
+.template-product.flygrubs-gdpr  .product-comparison-wrap table th {
+    font-size: 16px!important;
+}
+}
 /* End Css  */
 
 
