@@ -13586,6 +13586,12 @@ input:checked + .bsub-widget__group-header {
     padding: 0 40px;
 }
 }
+@media (max-width: 1200px) {
+  .product-desc-wrap .pd-grid-item.image-text .image-wrap,
+  .product-desc-wrap .pd-grid-item.image-text .content-wrap {
+    width: 100%;
+  }
+}
 /* End Css  */
 
 
