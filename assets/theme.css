@@ -13577,27 +13577,5 @@ input:checked + .bsub-widget__group-header {
 
 
 
-/* Start 15/03/2023 css  */
-.Template__.template-product.flygrubs-gdpr .Product__InfoWrapper,
-.Template__.template-product.flygrubs-gdpr .product-desc-section,
-.Template__.template-product.flygrubs-gdpr .product-testimonials-section,
-.Template__.template-product.flygrubs-gdpr .product-video-wrap {
-  font-family: "Nunito", "sans-serif" !important;
-}
-.template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
-  margin-bottom: 0;
-}
-.template-product.flygrubs-gdpr  .product-comparison-wrap table td.second-column {
-  font-weight: 400;
-}
-.template-product.flygrubs-gdpr .product-videos-section .SectionHeader {
-  margin-bottom: 40px;
-}
-@media (max-width: 480px) {
-.template-product.flygrubs-gdpr  .product-comparison-wrap table th {
-    font-size: 16px!important;
-}
-}
-/* End Css  */
 
 
