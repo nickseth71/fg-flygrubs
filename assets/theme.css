@@ -13507,9 +13507,9 @@ body.template-product h1,
 body.template-product h2,
 body.template-product h3,
 body.template-product h4,
-body.template-product p,
-body.template-product a,
-body.template-product div{
+.product-desc-wrap .pd-grid-item.image-text .content-wrap strong,
+.product-comparison-wrap table th,
+.product-ingredients-grid .pi-gi{
   font-family: "Nunito", "sans-serif" !important;
 }
 
