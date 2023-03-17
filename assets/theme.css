@@ -13503,7 +13503,7 @@ input:checked + .bsub-widget__group-header {
 .Template__.template-product.flygrubs-gdpr .product-video-wrap {
   font-family: "Nunito", "sans-serif" !important;
 } */
-body.template-product h1,
+/* body.template-product h1,
 body.template-product h2,
 body.template-product h3,
 body.template-product h4,
@@ -13511,7 +13511,7 @@ body.template-product h4,
 .product-comparison-wrap table th,
 .product-ingredients-grid .pi-gi{
   font-family: "Nunito", "sans-serif" !important;
-}
+} */
 
 .template-product.flygrubs-gdpr .product-testimonials-wrap  .pt-content-wrap .title {
   margin-bottom: 0;
