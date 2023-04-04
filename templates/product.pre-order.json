@@ -60,6 +60,13 @@
       "settings": {
       }
     },
+    "custom-richtext":{
+      "type":"custom-richtext",
+      "settings":{
+        "text":"",
+        "alignment":"center"
+      }
+    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
       "settings": {
@@ -71,6 +78,7 @@
     "main",
     "product-recommendations",
     "recently-viewed-products",
+    "custom-richtext",
     "zp-product-footer-content"
   ]
 }

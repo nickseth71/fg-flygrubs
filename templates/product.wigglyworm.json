@@ -321,6 +321,13 @@
       "settings": {
       }
     },
+    "custom-richtext":{
+      "type":"custom-richtext",
+      "settings":{
+        "text":"",
+        "alignment":"center"
+      }
+    },
     "165362920523719de5": {
       "type": "apps",
       "blocks": {
@@ -359,6 +366,7 @@
     "b1c46498-304a-4215-99cf-adceb85ddc8f",
     "18c652f5-17d5-4e34-91d8-fcd2e9fe7fd1",
     "c01be8e7-e144-408d-b4d1-288f93f5a8e2",
+    "custom-richtext",
     "165362920523719de5",
     "zp-product-footer-content"
   ]

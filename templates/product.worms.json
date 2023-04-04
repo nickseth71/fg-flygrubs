@@ -171,6 +171,13 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=o5bzSPnWbRU&t=4s"
       }
     },
+    "custom-richtext":{
+      "type":"custom-richtext",
+      "settings":{
+        "text":"",
+        "alignment":"center"
+      }
+    },
     "165362920523719de5": {
       "type": "apps",
       "blocks": {
@@ -206,6 +213,7 @@
     "165402254707c6f625",
     "1654058573a84987c6",
     "165362893854bf0123",
+    "custom-richtext",
     "165362920523719de5",
     "zp-product-footer-content"
   ]
