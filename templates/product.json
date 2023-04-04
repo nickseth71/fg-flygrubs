@@ -380,6 +380,13 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=o5bzSPnWbRU&t=4s"
       }
     },
+    "custom-richtext":{
+      "type":"custom-richtext",
+      "settings":{
+        "text":"",
+        "alignment":"left"
+      }
+    },
     "judgeme_section_review_widget_b1e8": {
       "type": "apps",
       "disabled": true,
@@ -451,6 +458,7 @@
     "19da0f79-f867-4566-a34d-bfc368dae4af",
     "89f3f460-4675-43c3-97ee-0817d60d47a0",
     "165362893854bf0123",
+    "custom-richtext",
     "judgeme_section_review_widget_b1e8",
     "165362920523719de5",
     "zp-product-footer-content"

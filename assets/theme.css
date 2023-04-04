@@ -13634,3 +13634,10 @@ body.template-product h4,
 
 
 
+.SectionHeader--left {
+    text-align: left;
+}
+
+.SectionHeader--right {
+    text-align: right;
+}
