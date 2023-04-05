@@ -1,0 +1,79 @@
+{% if section.settings.enable == true %}
+  <section
+    class="Section"
+    id="section-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="product-videos">
+    <div class="Container product-videos-section">
+      {% assign pvData = product.metafields.custom.product_videos.value %}
+      {% if pvData != blank %}
+        {% if pvData.heading != blank %}
+          <div class="section-header SectionHeader">
+            <h3 class="heading SectionHeader__Heading Heading">{{ pvData.heading }}</h3>
+          </div>
+        {% endif %}
+        <div class="product-video-wrap">
+          <div class="pv-grid">
+            {% for i in (0..19) %}
+              {% if pvData.video_url.value[i] != blank %}
+                <div class="ig-grid-item">
+                  <div class="pv-video">
+                    <video
+                      width="500"
+                      loop
+                      playsinline
+                      {% if pvData.video_thumbnail_image_url.value[i] %}
+                      poster="{{ pvData.video_thumbnail_image_url.value[i]}}"
+                      {% endif %}>
+                      <source src="{{ pvData.video_url.value[i] }}" type="video/mp4">
+                      <source src="{{ pvData.video_url.value[i] }}" type="video/ogg">
+                    </video>
+                    <img
+                      class="video-play-icon"
+                      src="https://cdn.shopify.com/s/files/1/0020/7595/1156/files/Group_803.png?v=1678688072"
+                      loading="lazy" />
+                  </div>
+                  <div class="pv-review-wrap">
+
+                    {% if pvData.profile_image_url.value[i] != blank %}
+                      <div class="profile-icon">
+                        <img
+                          src="{{ pvData.profile_image_url.value[i] }}"
+                          loading="lazy"
+                          \>
+                      </div>
+                    {% endif %}
+                    <div class="review-content">
+                      <p class="review">{{ pvData.review.value[i] }}</p>
+                      <p class="name">{{ pvData.name.value[i] }}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+{% schema %}
+  {
+    "name": "Product Videos",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Product Videos",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

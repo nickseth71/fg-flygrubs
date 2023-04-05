@@ -86,6 +86,48 @@
         "enable_video_looping": true
       }
     },
+    "2d611465-4955-40aa-bf33-76be33bec159": {
+      "type": "product-description",
+      "settings": {
+        "enable": true
+      }
+    },
+    "50d5ca35-3b8c-44fd-9a1b-f8d096eead7b": {
+      "type": "product-testimonials",
+      "settings": {
+        "enable": true
+      }
+    },
+    "a52e4ce3-94e9-44cb-a6f5-5574945b38b9": {
+      "type": "product-comparison-table",
+      "settings": {
+        "enable": true
+      }
+    },
+    "ec58f833-0fc1-45d6-9ef2-c794499dcf8a": {
+      "type": "ingredients-checklist",
+      "settings": {
+        "enable": true
+      }
+    },
+    "1ee83f89-d65f-4951-a366-6682f378d9a4": {
+      "type": "image-gallery",
+      "settings": {
+        "enable": true
+      }
+    },
+    "50ff4bbb-0ae6-47bc-bc7e-6e47bfb37a3c": {
+      "type": "lifestyle-video",
+      "settings": {
+        "enable": true
+      }
+    },
+    "d74255c4-5a6a-4538-a2eb-4a9e12d5f9fa": {
+      "type": "product-videos",
+      "settings": {
+        "enable": true
+      }
+    },
     "165402254707c6f625": {
       "type": "home-graph",
       "disabled": true,
@@ -172,6 +214,7 @@
     },
     "6ca32d77-c155-4e19-89f2-7f13d1df8c73": {
       "type": "home-infographic",
+      "disabled": true,
       "settings": {
         "location": "both",
         "title": "The sustainable + clean making of FLYGRUBS®",
@@ -179,6 +222,12 @@
         "link_text": "Get it now",
         "link_url": "#Add__To__Cart",
         "image": "shopify:\/\/shop_images\/infographic-image-landing-page-subscription-sep-22.jpg"
+      }
+    },
+    "2b2d5c1b-dc90-48ba-aedd-b77625dce637": {
+      "type": "product-review",
+      "settings": {
+        "enable": true
       }
     },
     "19da0f79-f867-4566-a34d-bfc368dae4af": {
@@ -325,9 +374,17 @@
     },
     "165362893854bf0123": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "section_size": "preserveRatio",
         "video_url": "https:\/\/www.youtube.com\/watch?v=o5bzSPnWbRU&t=4s"
+      }
+    },
+    "custom-richtext":{
+      "type":"custom-richtext",
+      "settings":{
+        "text":"",
+        "alignment":"left"
       }
     },
     "judgeme_section_review_widget_b1e8": {
@@ -387,12 +444,21 @@
   "order": [
     "zp-product-header-content",
     "main",
+    "2d611465-4955-40aa-bf33-76be33bec159",
+    "50d5ca35-3b8c-44fd-9a1b-f8d096eead7b",
+    "a52e4ce3-94e9-44cb-a6f5-5574945b38b9",
+    "ec58f833-0fc1-45d6-9ef2-c794499dcf8a",
+    "1ee83f89-d65f-4951-a366-6682f378d9a4",
+    "50ff4bbb-0ae6-47bc-bc7e-6e47bfb37a3c",
+    "d74255c4-5a6a-4538-a2eb-4a9e12d5f9fa",
     "165402254707c6f625",
     "1654058573a84987c6",
     "6ca32d77-c155-4e19-89f2-7f13d1df8c73",
+    "2b2d5c1b-dc90-48ba-aedd-b77625dce637",
     "19da0f79-f867-4566-a34d-bfc368dae4af",
     "89f3f460-4675-43c3-97ee-0817d60d47a0",
     "165362893854bf0123",
+    "custom-richtext",
     "judgeme_section_review_widget_b1e8",
     "165362920523719de5",
     "zp-product-footer-content"

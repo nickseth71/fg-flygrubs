@@ -1,0 +1,46 @@
+
+<div class="richtext-wrap Rte  Section Section--spacingNormal">
+    <div class="richtext_main SectionHeader--{{ section.settings.alignment }} Container">
+      {% if section.settings.text != blank %}
+      {{ section.settings.text }}
+      {% endif %}
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Custom Rich Text",
+  "settings": [
+   {
+    "type":"richtext",
+    "id":"text",
+    "label":"Text"
+   },
+   {
+    "type":"select",
+    "label":"Alignment",
+    "id":"alignment",
+    "default": "left",
+    "options":[
+      {
+      "value":"left",
+      "label":"Left"
+      },
+      {
+        "value":"right",
+        "label":"Right"
+      },
+      {
+        "value":"center",
+        "label":"Center"
+      }
+    ]
+   }
+  ],
+  "presets": [
+    {
+      "name": "Custom Rich Text"
+    }
+  ]
+}
+{% endschema %}
+

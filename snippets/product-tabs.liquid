@@ -2,44 +2,50 @@
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'content' -%}
-        {%- assign title = block.settings.title -%}
-        
-        
-
-
-      
-
+      {%- assign title = block.settings.title -%}
       {%- when 'reviews' -%}
-        <div class="Collapsible Collapsible--large" {{ block.shopify_attributes }}>
-          <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-            <span>{{ 'product.tabs.reviews' | t }} <span class="text--light">({{ product.metafields.reviews.rating_count.value | default: 0 }})</span></span>
-            <span class="Collapsible__Plus"></span>
-          </button>
+      <div class="Collapsible Collapsible--large" {{ block.shopify_attributes }}>
+        <button
+          class="Collapsible__Button Heading u-h6"
+          data-action="toggle-collapsible"
+          aria-expanded="false">
+          <span>{{ 'product.tabs.reviews' | t }}
+            <span class="text--light">({{ product.metafields.reviews.rating_count.value | default: 0 }})</span>
+          </span>
+          <span class="Collapsible__Plus"></span>
+        </button>
 
-          <div class="Collapsible__Inner">
-            <div class="Collapsible__Content">
-              <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
-            </div>
+        <div class="Collapsible__Inner">
+          <div class="Collapsible__Content">
+            <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
           </div>
         </div>
+      </div>
     {%- endcase -%}
   {%- endfor -%}
 {%- endcapture -%}
 
 
 <div class="Product__Tabs">
-  {% for accordion in product.metafields.accentuate.accordion_heading %} 
-  <div class="Collapsible Collapsible--small" {{ block.shopify_attributes }}>
-    <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-      {{- accordion -}} <span class="Collapsible__Plus"></span>
-    </button>
-    <div class="Collapsible__Inner">
-      <div class="Collapsible__Content">
-        <div class="Rte">
-          {{- product.metafields.accentuate.accordion_content[forloop.index0] -}}
+  {% for accordion in product.metafields.accentuate.accordion_heading %}
+    <div
+      class="Collapsible Collapsible--small"
+      {{ block.shopify_attributes }}
+      {% if forloop.first %}style="overflow: visible;"{% endif %}>
+      <button
+        class="Collapsible__Button Heading u-h6"
+        data-action="toggle-collapsible"
+        aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}">
+        {{- accordion -}}
+        <span class="Collapsible__Plus"></span>
+      </button>
+      <div class="Collapsible__Inner" {% if forloop.first %}style="overflow: visible; height: auto;"{% endif %}>
+        <div class="Collapsible__Content">
+          <div class="Rte">
+            {{- product.metafields.accentuate.accordion_content[forloop.index0] -}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
